@@ -11,11 +11,11 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 
-    <meta name="description" content="당신의 진짜 정신 나이는? 🧒 15개의 재미있는 질문에 답하고 당신이 10대처럼 생각하는지 현자처럼 생각하는지 알아보세요. 친구들과 정신 나이를 공유하세요!" data-i18n="meta.description">
-    <meta name="keywords" content="정신 나이 테스트, 뇌 나이 테스트, 내 뇌 나이는, 정신 나이 퀴즈, 심리 나이 테스트, mental age test, brain age test" data-i18n="meta.keywords">
+    <meta name="description" content="7가지 인지 미니 챌린지로 당신의 진짜 정신 나이를 측정하세요! 기억력, 반응속도, 패턴인식, 집중력 테스트. 친구들과 결과를 공유하세요!" data-i18n="meta.description">
+    <meta name="keywords" content="정신 나이 테스트, 뇌 나이 테스트, 인지 테스트, 기억력 테스트, 반응속도 테스트, mental age test, brain age test, cognitive test" data-i18n="meta.keywords">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="정신 나이 테스트 🧒 - 당신의 마음은 몇 살? | DopaBrain" data-i18n="meta.og_title">
-    <meta property="og:description" content="15개 질문으로 당신의 정신 나이를 알아보세요! 10대의 열정? 현자의 지혜? 테스트 후 결과를 SNS에 공유해보세요!" data-i18n="meta.og_description">
+    <meta property="og:title" content="정신 나이 테스트 - 7가지 두뇌 챌린지 | DopaBrain" data-i18n="meta.og_title">
+    <meta property="og:description" content="7가지 인지 미니 챌린지로 진짜 정신 나이를 측정하세요! 기억력, 반응속도, 패턴인식 등 두뇌 스캔 후 결과를 SNS에 공유!" data-i18n="meta.og_description">
     <meta property="og:image" content="https://dopabrain.com/mental-age/icon-512.svg">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
@@ -42,19 +42,19 @@
     <link rel="alternate" hreflang="fr" href="https://dopabrain.com/mental-age/">
     <link rel="alternate" hreflang="x-default" href="https://dopabrain.com/mental-age/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="정신 나이 테스트 🧒 - 당신의 마음은 몇 살?" data-i18n="meta.twitter_title">
-    <meta name="twitter:description" content="15개 질문으로 당신의 정신 나이를 알아보세요!" data-i18n="meta.twitter_description">
+    <meta name="twitter:title" content="정신 나이 테스트 - 7가지 두뇌 챌린지" data-i18n="meta.twitter_title">
+    <meta name="twitter:description" content="7가지 인지 미니 챌린지로 진짜 정신 나이를 측정하세요!" data-i18n="meta.twitter_description">
     <meta name="twitter:image" content="https://dopabrain.com/mental-age/icon-512.svg">
     <meta name="twitter:site" content="@dopabrain">
     <link rel="canonical" href="https://dopabrain.com/mental-age/">
-    <title>Mental Age Test 🧒 - How Old Is Your Mind? | DopaBrain</title>
+    <title>Mental Age Test - 7 Brain Challenges | DopaBrain</title>
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "Mental Age Test",
-        "description": "What is your real mental age? Answer 15 fun questions to discover if you think like a teenager or a wise elder. Share your mental age with friends!",
+        "name": "Mental Age Test - Brain Scan",
+        "description": "Test your real mental age with 7 interactive cognitive mini-challenges: memory, reaction speed, pattern recognition, focus, emotional reading, and number memory.",
         "url": "https://dopabrain.com/mental-age/",
         "image": "https://dopabrain.com/mental-age/icon-512.svg",
         "applicationCategory": "EntertainmentApplication",
@@ -106,7 +106,6 @@
 
     <!-- Preload critical scripts -->
     <link rel="preload" href="js/i18n.js" as="script">
-    <link rel="preload" href="js/quiz-data.js" as="script">
     <link rel="preload" href="js/app.js" as="script">
 </head>
 <body>
@@ -115,13 +114,13 @@
 
     <div class="app-loader" id="app-loader">
         <div class="loader-content">
-            <div class="loader-emoji">🧒</div>
+            <div class="loader-emoji">🧠</div>
             <div class="loader-spinner"></div>
             <div class="loader-text" data-i18n="app.loading">Loading...</div>
         </div>
     </div>
 
-    <div class="app-container">
+    <div class="app-container" id="main-content">
         <!-- Theme Toggle -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Theme toggle">🌙</button>
 
@@ -157,45 +156,56 @@
         <div id="intro-screen" class="screen active">
             <div class="intro-content">
                 <div class="brain-emoji-animation">
-                    <span class="brain-emoji">🧒</span>
+                    <span class="brain-emoji">🧠</span>
                 </div>
                 <h1 class="intro-title" data-i18n="intro.title">Mental Age Test</h1>
-                <p class="intro-subtitle" data-i18n="intro.subtitle">How old is your mind really?</p>
+                <p class="intro-subtitle" data-i18n="intro.subtitle">7 Cognitive Mini-Challenges</p>
 
                 <div class="intro-description">
-                    <p data-i18n="intro.description">Answer 15 fun questions to discover your mental age.</p>
-                    <p data-i18n="intro.description_2">Are you a young spirit or a wise soul? Find out now!</p>
+                    <p data-i18n="intro.description">Complete 7 brain challenges to discover your real mental age.</p>
+                    <p data-i18n="intro.description_2">Memory, speed, focus, pattern recognition and more!</p>
                 </div>
 
-                <div class="age-range-preview">
-                    <div class="type-badge">🧒 15-22</div>
-                    <div class="type-badge">🌟 23-30</div>
-                    <div class="type-badge">⚖️ 31-40</div>
-                    <div class="type-badge">🎯 41-50</div>
-                    <div class="type-badge">📚 51-60</div>
-                    <div class="type-badge">🦉 61-75</div>
+                <div class="challenge-preview">
+                    <div class="challenge-badge"><span>🧩</span> <span data-i18n="challenge.memory_name">Memory</span></div>
+                    <div class="challenge-badge"><span>⚡</span> <span data-i18n="challenge.reaction_name">Speed</span></div>
+                    <div class="challenge-badge"><span>🔷</span> <span data-i18n="challenge.pattern_name">Pattern</span></div>
+                    <div class="challenge-badge"><span>💬</span> <span data-i18n="challenge.word_name">Words</span></div>
+                    <div class="challenge-badge"><span>🎯</span> <span data-i18n="challenge.stroop_name">Focus</span></div>
+                    <div class="challenge-badge"><span>😊</span> <span data-i18n="challenge.emotion_name">Emotion</span></div>
+                    <div class="challenge-badge"><span>🔢</span> <span data-i18n="challenge.number_name">Numbers</span></div>
                 </div>
 
-                <button id="start-btn" class="btn btn-primary" data-i18n="button.start">Start Test</button>
-                <p class="time-estimate" data-i18n="intro.time_estimate">Estimated time: ~3 minutes</p>
+                <button id="start-btn" class="btn btn-primary" data-i18n="button.start">Start Brain Scan</button>
+                <p class="time-estimate" data-i18n="intro.time_estimate">Takes about 3 minutes</p>
             </div>
         </div>
 
-        <!-- Quiz Screen -->
-        <div id="quiz-screen" class="screen">
-            <div class="quiz-header">
-                <button id="progress-back" class="back-btn">← <span data-i18n="button.back">Back</span></button>
+        <!-- Challenge Screen -->
+        <div id="challenge-screen" class="screen">
+            <div class="challenge-header">
                 <div class="progress-bar">
                     <div id="progress-fill" class="progress-fill"></div>
                 </div>
-                <span class="progress-text"><span id="current-question">1</span>/15</span>
+                <span class="progress-text"><span id="current-challenge">1</span>/7</span>
             </div>
 
-            <div class="quiz-content">
-                <div class="question-container">
-                    <h2 id="question-text" class="question-text"></h2>
-                    <div id="options-container" class="options-container"></div>
-                </div>
+            <!-- Challenge instruction overlay -->
+            <div id="challenge-instruction" class="challenge-instruction">
+                <div class="instruction-icon" id="instruction-icon">🧩</div>
+                <h2 id="instruction-title" class="instruction-title"></h2>
+                <p id="instruction-text" class="instruction-text"></p>
+                <div class="instruction-countdown" id="instruction-countdown">3</div>
+            </div>
+
+            <!-- Challenge area - dynamically populated by JS -->
+            <div id="challenge-area" class="challenge-area"></div>
+
+            <!-- Score feedback overlay -->
+            <div id="score-feedback" class="score-feedback hidden">
+                <div class="score-stars" id="score-stars"></div>
+                <div class="score-points" id="score-points"></div>
+                <div class="score-label" id="score-label"></div>
             </div>
         </div>
 
@@ -205,9 +215,9 @@
                 <div class="brain-scan">
                     <div class="brain-scan-circle"></div>
                     <div class="brain-scan-wave"></div>
-                    <span class="brain-scan-text">🧒</span>
+                    <span class="brain-scan-text">🧠</span>
                 </div>
-                <h2 data-i18n="analyzing.title">Analyzing your mental age...</h2>
+                <h2 data-i18n="analyzing.title">Analyzing your brain data...</h2>
                 <p data-i18n="analyzing.subtitle">Please wait a moment</p>
                 <div class="loading-dots">
                     <span></span>
@@ -220,8 +230,6 @@
         <!-- Result Screen -->
         <div id="result-screen" class="screen">
             <div class="result-content">
-                <button id="result-back" class="back-btn">← <span data-i18n="button.back">Back</span></button>
-
                 <div class="confetti-container" id="confetti-container"></div>
 
                 <div class="result-header">
@@ -231,21 +239,18 @@
                     <p id="result-tagline" class="result-tagline"></p>
                 </div>
 
+                <!-- Radar Chart -->
+                <div class="radar-section">
+                    <h3 data-i18n="result.brain_profile">Brain Profile</h3>
+                    <canvas id="radar-chart" width="300" height="300"></canvas>
+                </div>
+
                 <div class="result-description" id="result-description"></div>
 
-                <div class="traits-section">
-                    <h3 data-i18n="result.traits">Your Traits</h3>
-                    <ul id="traits-list"></ul>
-                </div>
-
-                <div class="tips-section">
-                    <h3 data-i18n="result.tips">Tips for Your Mental Age</h3>
-                    <ul id="tips-list"></ul>
-                </div>
-
-                <div class="famous-examples">
-                    <h3 data-i18n="result.famous_examples">Famous People with Similar Mental Age</h3>
-                    <p id="famous-people"></p>
+                <!-- Score Breakdown -->
+                <div class="scores-section">
+                    <h3 data-i18n="result.score_breakdown">Score Breakdown</h3>
+                    <div id="scores-list" class="scores-list"></div>
                 </div>
 
                 <!-- Share Section -->
@@ -254,8 +259,7 @@
                     <!-- Canvas for image generation -->
                     <canvas id="result-canvas" width="1080" height="1080" style="display:none;"></canvas>
                     <div class="share-buttons">
-                        <button id="share-image-download" class="share-btn download" data-i18n="button.share_download">📥 Download Image</button>
-                        <button id="share-kakao" class="share-btn kakao" data-i18n="button.share_kakao">KakaoTalk</button>
+                        <button id="share-image-download" class="share-btn download" data-i18n="button.share_download">Download Image</button>
                         <button id="share-twitter" class="share-btn twitter" data-i18n="button.share_twitter">Twitter</button>
                         <button id="share-facebook" class="share-btn facebook" data-i18n="button.share_facebook">Facebook</button>
                         <button id="share-copy" class="share-btn copy" data-i18n="button.share_copy">Copy Link</button>
@@ -264,11 +268,11 @@
 
                 <!-- Related Apps -->
                 <section class="related-apps" style="margin:24px 0;padding:20px;background:rgba(255,255,255,0.05);border-radius:16px;border:1px solid rgba(255,255,255,0.1);">
-                  <h3 style="font-size:16px;font-weight:700;margin-bottom:14px;color:#aaa;">🧪 관련 테스트</h3>
+                  <h3 style="font-size:16px;font-weight:700;margin-bottom:14px;color:#aaa;" data-i18n="result.related_tests">Related Tests</h3>
                   <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                    <a href="/blood-type/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">🩸 Blood Type Test</a>
-                    <a href="/brain-type/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">🧠 Brain Type</a>
-                    <a href="/numerology/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">🔮 Numerology</a>
+                    <a href="/blood-type/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">Blood Type Test</a>
+                    <a href="/brain-type/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">Brain Type</a>
+                    <a href="/numerology/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">Numerology</a>
                   </div>
                 </section>
 
@@ -296,7 +300,6 @@
     </footer>
 
     <script src="js/i18n.js" defer></script>
-    <script src="js/quiz-data.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="/portal/js/cross-promo.js" defer></script>
     <script src="/portal/js/pwa-install.js" defer></script>
