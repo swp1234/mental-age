@@ -17,10 +17,13 @@
     "subtitle": "7 Bilissel Mini Meydan Okuma",
     "description": "7 beyin meydan okumasini tamamlayarak gercek zihinsel yasini kesfet.",
     "description_2": "Hafiza, hiz, odaklanma, oruntu tanima ve daha fazlasi!",
-    "time_estimate": "Sure: yaklasik 3 dakika"
+    "time_estimate": "Sure: yaklasik 3 dakika",
+    "yourMentalAge": "Zihinsel yasin",
+    "resultPreview": "Cogu kisi 25 yasinda oldugunu dusunuyor... ama beyinleri 42 diyor!",
+    "socialProof": "2.340+ beyin taramasi tamamlandi"
   },
   "button": {
-    "start": "Beyin Taramasini Baslat",
+    "start": "Zihinsel yasini kesfet",
     "retry": "Tekrar Dene",
     "submit": "Gonder",
     "share_download": "Gorsel Indir",
@@ -142,8 +145,8 @@
     "copy_error": "Baglanti kopyalanamadi."
   },
   "share": {
-    "twitterText": "Zihinsel yasim {age}! {type} {emoji} sonucunu aldim. Seninki kac?",
-    "copyText": "Zihinsel yasim {age}! {type} {emoji} {url}",
+    "twitterText": "Beyin taramaminin sonucu: zihinsel yasim {age}! {emoji} {type} - {tagline} Seninki?",
+    "copyText": "Beyin taramaminin sonucu: zihinsel yasim {age}! {emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "Zihinsel Yasim...",
     "canvasTitle": "Zihinsel Yas Testi"
   },

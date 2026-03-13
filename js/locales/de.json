@@ -17,10 +17,13 @@
     "subtitle": "7 Kognitive Mini-Herausforderungen",
     "description": "Absolviere 7 Gehirn-Herausforderungen, um dein echtes mentales Alter zu entdecken.",
     "description_2": "Gedaechtnis, Geschwindigkeit, Fokus, Mustererkennung und mehr!",
-    "time_estimate": "Dauer: etwa 3 Minuten"
+    "time_estimate": "Dauer: etwa 3 Minuten",
+    "yourMentalAge": "Dein mentales Alter",
+    "resultPreview": "Die meisten denken, sie waeren 25... aber ihr Gehirn sagt 42!",
+    "socialProof": "2.340+ Gehirn-Scans abgeschlossen"
   },
   "button": {
-    "start": "Gehirn-Scan starten",
+    "start": "Entdecke dein mentales Alter",
     "retry": "Nochmal versuchen",
     "submit": "Absenden",
     "share_download": "Bild herunterladen",
@@ -142,8 +145,8 @@
     "copy_error": "Link konnte nicht kopiert werden."
   },
   "share": {
-    "twitterText": "Mein mentales Alter ist {age}! Ich bekam {type} {emoji}. Wie alt ist deins?",
-    "copyText": "Mein mentales Alter ist {age}! {type} {emoji} {url}",
+    "twitterText": "Gehirn-Scan Ergebnis: mein mentales Alter ist {age}! {emoji} {type} - {tagline} Wie alt ist deins?",
+    "copyText": "Gehirn-Scan Ergebnis: mein mentales Alter ist {age}! {emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "Mein Mentales Alter Ist...",
     "canvasTitle": "Mentales Alter Test"
   },

@@ -17,10 +17,13 @@
     "subtitle": "7 Mini-Defis Cognitifs",
     "description": "Completez 7 defis cerebraux pour decouvrir votre age mental reel.",
     "description_2": "Memoire, vitesse, concentration, reconnaissance de motifs et plus !",
-    "time_estimate": "Duree : environ 3 minutes"
+    "time_estimate": "Duree : environ 3 minutes",
+    "yourMentalAge": "Votre age mental",
+    "resultPreview": "La plupart pensent avoir 25 ans... mais leur cerveau dit 42 !",
+    "socialProof": "2 340+ scans cerebraux completes"
   },
   "button": {
-    "start": "Lancer le Scan Cerebral",
+    "start": "Decouvrez votre age mental",
     "retry": "Reessayer",
     "submit": "Envoyer",
     "share_download": "Telecharger l'image",
@@ -142,8 +145,8 @@
     "copy_error": "Echec de la copie du lien."
   },
   "share": {
-    "twitterText": "Mon age mental est {age} ! J'ai obtenu {type} {emoji}. Et vous ?",
-    "copyText": "Mon age mental est {age} ! {type} {emoji} {url}",
+    "twitterText": "Resultat du scan cerebral : mon age mental est {age} ! {emoji} {type} - {tagline} Et vous ?",
+    "copyText": "Resultat du scan cerebral : mon age mental est {age} ! {emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "Mon Age Mental Est...",
     "canvasTitle": "Test d'Age Mental"
   },

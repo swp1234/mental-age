@@ -17,10 +17,13 @@
     "subtitle": "7つの認知ミニチャレンジ",
     "description": "7つの脳チャレンジを完了して、本当の精神年齢を発見しましょう。",
     "description_2": "記憶力、反応速度、集中力、パターン認識など多彩なテスト！",
-    "time_estimate": "所要時間：約3分"
+    "time_estimate": "所要時間：約3分",
+    "yourMentalAge": "あなたの精神年齢",
+    "resultPreview": "ほとんどの人は25歳だと思っていますが...脳は42歳と言っています！",
+    "socialProof": "2,340回以上のブレインスキャン完了"
   },
   "button": {
-    "start": "ブレインスキャン開始",
+    "start": "精神年齢を発見する",
     "retry": "もう一度",
     "submit": "送信",
     "share_download": "画像を保存",
@@ -142,8 +145,8 @@
     "copy_error": "リンクのコピーに失敗しました。"
   },
   "share": {
-    "twitterText": "私の精神年齢は{age}歳！{type} {emoji}の結果でした。あなたは？",
-    "copyText": "私の精神年齢は{age}歳！{type} {emoji} {url}",
+    "twitterText": "ブレインスキャンの結果、私の精神年齢は{age}歳！{emoji} {type} - {tagline} あなたは？",
+    "copyText": "ブレインスキャンの結果、私の精神年齢は{age}歳！{emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "私の精神年齢は...",
     "canvasTitle": "精神年齢テスト"
   },

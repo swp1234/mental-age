@@ -37,6 +37,7 @@ class BrainScanApp {
         }
         this.setupEventListeners();
         this.setupServiceWorker();
+        this.startAgeCounterAnimation();
     }
 
     // ========== EVENT LISTENERS ==========
@@ -1282,11 +1283,13 @@ class BrainScanApp {
     shareTwitter() {
         const catData = this._getCategoryData()[this.category];
         const categoryName = i18n.t(catData.nameKey);
+        const tagline = i18n.t(catData.taglineKey);
         const template = i18n.t('share.twitterText') || 'My mental age is {age}! I got {type} {emoji}. What is yours?';
         const text = template
             .replace('{age}', this.mentalAge)
             .replace('{type}', categoryName)
-            .replace('{emoji}', catData.emoji);
+            .replace('{emoji}', catData.emoji)
+            .replace('{tagline}', tagline);
         const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.href)}`;
         window.open(url, '_blank', 'width=550,height=420');
 
@@ -1307,11 +1310,13 @@ class BrainScanApp {
     shareCopy() {
         const catData = this._getCategoryData()[this.category];
         const categoryName = i18n.t(catData.nameKey);
+        const tagline = i18n.t(catData.taglineKey);
         const template = i18n.t('share.copyText') || 'My mental age is {age}! I got {type} {emoji}. {url}';
         const text = template
             .replace('{age}', this.mentalAge)
             .replace('{type}', categoryName)
             .replace('{emoji}', catData.emoji)
+            .replace('{tagline}', tagline)
             .replace('{url}', window.location.href);
 
         navigator.clipboard.writeText(text).then(() => {
@@ -1432,6 +1437,34 @@ class BrainScanApp {
             }
         }
         ctx.fillText(line.trim(), x, currentY);
+    }
+
+    // ========== AGE COUNTER ANIMATION ==========
+
+    startAgeCounterAnimation() {
+        const el = document.getElementById('age-counter');
+        if (!el) return;
+
+        const ages = [];
+        for (let i = 5; i <= 85; i += 5) ages.push(i);
+        let idx = 0;
+        let cycles = 0;
+        const maxCycles = 3;
+
+        const interval = setInterval(() => {
+            el.textContent = ages[idx];
+            idx++;
+            if (idx >= ages.length) {
+                idx = 0;
+                cycles++;
+                if (cycles >= maxCycles) {
+                    clearInterval(interval);
+                    el.textContent = '?';
+                    el.style.animation = 'pulse 1.5s ease-in-out infinite';
+                }
+            }
+        }, 80);
+        this._timers.push(interval);
     }
 
     // ========== THEME ==========

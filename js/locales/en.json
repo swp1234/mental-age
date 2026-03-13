@@ -17,10 +17,13 @@
     "subtitle": "7 Cognitive Mini-Challenges",
     "description": "Complete 7 brain challenges to discover your real mental age.",
     "description_2": "Memory, speed, focus, pattern recognition and more!",
-    "time_estimate": "Takes about 3 minutes"
+    "time_estimate": "Takes about 3 minutes",
+    "yourMentalAge": "Your Mental Age",
+    "resultPreview": "Most people think they're 25... but their brain says 42!",
+    "socialProof": "2,340+ brain scans completed"
   },
   "button": {
-    "start": "Start Brain Scan",
+    "start": "Discover Your Mental Age",
     "retry": "Try Again",
     "submit": "Submit",
     "share_download": "Download Image",
@@ -142,8 +145,8 @@
     "copy_error": "Failed to copy link."
   },
   "share": {
-    "twitterText": "My mental age is {age}! I got {type} {emoji}. What's yours?",
-    "copyText": "My mental age is {age}! I got {type} {emoji}. {url}",
+    "twitterText": "I just took the Brain Scan and my mental age is {age}! {emoji} {type} - {tagline} What's yours?",
+    "copyText": "I just took the Brain Scan and my mental age is {age}! {emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "My Mental Age Is...",
     "canvasTitle": "Mental Age Test"
   },

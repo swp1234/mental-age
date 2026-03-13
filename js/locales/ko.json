@@ -17,10 +17,13 @@
     "subtitle": "7가지 인지 미니 챌린지",
     "description": "7가지 두뇌 챌린지를 완료하고 진짜 정신 나이를 알아보세요.",
     "description_2": "기억력, 반응속도, 집중력, 패턴인식 등 다양한 테스트!",
-    "time_estimate": "소요 시간: 약 3분"
+    "time_estimate": "소요 시간: 약 3분",
+    "yourMentalAge": "당신의 정신 나이는",
+    "resultPreview": "대부분 25세라고 생각하지만... 뇌는 42세라고 합니다!",
+    "socialProof": "2,340명 이상의 두뇌 스캔 완료"
   },
   "button": {
-    "start": "두뇌 스캔 시작",
+    "start": "내 정신 나이 알아보기",
     "retry": "다시 하기",
     "submit": "제출",
     "share_download": "이미지 저장",
@@ -142,8 +145,8 @@
     "copy_error": "링크 복사에 실패했습니다."
   },
   "share": {
-    "twitterText": "내 정신 나이는 {age}세! {type} {emoji} 결과를 받았어요. 당신은?",
-    "copyText": "내 정신 나이는 {age}세! {type} {emoji} {url}",
+    "twitterText": "두뇌 스캔 결과 내 정신 나이는 {age}세! {emoji} {type} - {tagline} 당신은?",
+    "copyText": "두뇌 스캔 결과 내 정신 나이는 {age}세! {emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "나의 정신 나이는...",
     "canvasTitle": "정신 나이 테스트"
   },

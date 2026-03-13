@@ -17,10 +17,13 @@
     "subtitle": "7 Tantangan Kognitif Mini",
     "description": "Selesaikan 7 tantangan otak untuk menemukan usia mentalmu yang sebenarnya.",
     "description_2": "Memori, kecepatan, fokus, pengenalan pola dan lainnya!",
-    "time_estimate": "Waktu: sekitar 3 menit"
+    "time_estimate": "Waktu: sekitar 3 menit",
+    "yourMentalAge": "Usia mentalmu",
+    "resultPreview": "Kebanyakan orang mengira usia mereka 25... tapi otak bilang 42!",
+    "socialProof": "2.340+ scan otak selesai"
   },
   "button": {
-    "start": "Mulai Scan Otak",
+    "start": "Temukan usia mentalmu",
     "retry": "Coba Lagi",
     "submit": "Kirim",
     "share_download": "Unduh Gambar",
@@ -142,8 +145,8 @@
     "copy_error": "Gagal menyalin tautan."
   },
   "share": {
-    "twitterText": "Usia mentalku {age} tahun! Aku dapat {type} {emoji}. Punyamu berapa?",
-    "copyText": "Usia mentalku {age} tahun! {type} {emoji} {url}",
+    "twitterText": "Hasil scan otak: usia mentalku {age} tahun! {emoji} {type} - {tagline} Punyamu?",
+    "copyText": "Hasil scan otak: usia mentalku {age} tahun! {emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "Usia Mentalku Adalah...",
     "canvasTitle": "Tes Usia Mental"
   },

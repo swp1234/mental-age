@@ -408,6 +408,98 @@ body {
     50% { transform: scale(1.1); }
 }
 
+/* Age Counter Animation */
+.age-counter-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.age-counter-number {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color), var(--primary-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-variant-numeric: tabular-nums;
+    min-width: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+.age-counter-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+/* Result Preview Teaser */
+.result-preview-teaser {
+    margin: 12px auto 8px;
+    padding: 10px 16px;
+    background: rgba(8, 145, 178, 0.08);
+    border: 1px solid rgba(8, 145, 178, 0.2);
+    border-radius: 10px;
+    max-width: 340px;
+}
+
+.teaser-text {
+    font-size: 13px;
+    color: var(--primary-light);
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+}
+
+[data-theme="light"] .result-preview-teaser {
+    background: rgba(8, 145, 178, 0.06);
+    border-color: rgba(8, 145, 178, 0.15);
+}
+
+[data-theme="light"] .teaser-text {
+    color: var(--primary-dark);
+}
+
+/* Social Proof Badge */
+.social-proof-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    border-radius: 20px;
+    margin: 16px auto 8px;
+    font-size: 13px;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.social-proof-icon {
+    font-size: 16px;
+}
+
+[data-theme="light"] .social-proof-badge {
+    background: rgba(245, 158, 11, 0.08);
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+/* CTA Pulse Animation */
+.btn-cta-pulse {
+    animation: cta-pulse 2s ease-in-out infinite;
+}
+
+@keyframes cta-pulse {
+    0%, 100% { box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3); }
+    50% { box-shadow: 0 4px 24px rgba(8, 145, 178, 0.6); }
+}
+
 .intro-title {
     font-size: 28px;
     font-weight: 700;
@@ -1471,6 +1563,7 @@ body {
     .intro-title { font-size: 24px; }
     .result-title { font-size: 24px; }
     .age-display { font-size: 72px; }
+    .age-counter-number { font-size: 52px; }
     .memory-grid { max-width: 240px; gap: 6px; }
     .memory-cell { min-width: 48px; min-height: 48px; }
     .reaction-area { height: 220px; }

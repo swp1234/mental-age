@@ -17,10 +17,13 @@
     "subtitle": "7 Mini-Desafios Cognitivos",
     "description": "Complete 7 desafios cerebrais para descobrir sua idade mental real.",
     "description_2": "Memoria, velocidade, foco, reconhecimento de padroes e mais!",
-    "time_estimate": "Tempo: aproximadamente 3 minutos"
+    "time_estimate": "Tempo: aproximadamente 3 minutos",
+    "yourMentalAge": "Sua idade mental",
+    "resultPreview": "A maioria acha que tem 25... mas o cerebro diz 42!",
+    "socialProof": "2.340+ escaneamentos cerebrais completos"
   },
   "button": {
-    "start": "Iniciar Escaner Cerebral",
+    "start": "Descubra sua idade mental",
     "retry": "Tentar Novamente",
     "submit": "Enviar",
     "share_download": "Baixar Imagem",
@@ -142,8 +145,8 @@
     "copy_error": "Falha ao copiar o link."
   },
   "share": {
-    "twitterText": "Minha idade mental e {age}! Eu obtive {type} {emoji}. E a sua?",
-    "copyText": "Minha idade mental e {age}! {type} {emoji} {url}",
+    "twitterText": "Resultado do escaner cerebral: minha idade mental e {age}! {emoji} {type} - {tagline} E a sua?",
+    "copyText": "Resultado do escaner cerebral: minha idade mental e {age}! {emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "Minha Idade Mental E...",
     "canvasTitle": "Teste de Idade Mental"
   },

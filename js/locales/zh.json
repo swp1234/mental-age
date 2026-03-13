@@ -17,10 +17,13 @@
     "subtitle": "7个认知小挑战",
     "description": "完成7个大脑挑战，发现你的真实心理年龄。",
     "description_2": "记忆力、反应速度、专注力、模式识别等多项测试！",
-    "time_estimate": "用时：约3分钟"
+    "time_estimate": "用时：约3分钟",
+    "yourMentalAge": "你的心理年龄",
+    "resultPreview": "大多数人以为自己25岁...但大脑却说42岁！",
+    "socialProof": "已完成2,340+次大脑扫描"
   },
   "button": {
-    "start": "开始大脑扫描",
+    "start": "发现你的心理年龄",
     "retry": "重新测试",
     "submit": "提交",
     "share_download": "保存图片",
@@ -142,8 +145,8 @@
     "copy_error": "链接复制失败。"
   },
   "share": {
-    "twitterText": "我的心理年龄是{age}岁！得到了{type} {emoji}的结果。你呢？",
-    "copyText": "我的心理年龄是{age}岁！{type} {emoji} {url}",
+    "twitterText": "大脑扫描结果：我的心理年龄是{age}岁！{emoji} {type} - {tagline} 你呢？",
+    "copyText": "大脑扫描结果：我的心理年龄是{age}岁！{emoji} {type} - {tagline} {url}",
     "canvasSubtitle": "我的心理年龄是...",
     "canvasTitle": "心理年龄测试"
   },
