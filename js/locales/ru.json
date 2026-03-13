@@ -37,7 +37,15 @@
     "brain_profile": "\u041f\u0440\u043e\u0444\u0438\u043b\u044c \u043c\u043e\u0437\u0433\u0430",
     "score_breakdown": "\u0420\u0430\u0437\u0431\u043e\u0440 \u0431\u0430\u043b\u043b\u043e\u0432",
     "share": "\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u043c",
-    "related_tests": "\u041f\u043e\u0445\u043e\u0436\u0438\u0435 \u0442\u0435\u0441\u0442\u044b"
+    "related_tests": "\u041f\u043e\u0445\u043e\u0436\u0438\u0435 \u0442\u0435\u0441\u0442\u044b",
+    "moreTests": "Ещё тесты",
+    "percentileStat": "Только <strong>{percent}%</strong> имеют такой же ментальный возраст"
+  },
+  "related": {
+    "emotionalAge": "Эмоциональный возраст",
+    "brainType": "Тип мозга",
+    "eqTest": "Тест EQ",
+    "iqTest": "IQ Тест"
   },
   "challenge": {
     "memory_name": "\u041f\u0430\u043c\u044f\u0442\u044c",

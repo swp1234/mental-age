@@ -37,7 +37,15 @@
     "brain_profile": "Perfil Cerebral",
     "score_breakdown": "Detalhamento da Pontuacao",
     "share": "Compartilhe seu Resultado",
-    "related_tests": "Testes Relacionados"
+    "related_tests": "Testes Relacionados",
+    "moreTests": "Explorar mais",
+    "percentileStat": "Apenas <strong>{percent}%</strong> compartilham sua idade mental"
+  },
+  "related": {
+    "emotionalAge": "Idade Emocional",
+    "brainType": "Tipo Cerebral",
+    "eqTest": "Teste de QE",
+    "iqTest": "Teste de QI"
   },
   "challenge": {
     "memory_name": "Memoria",

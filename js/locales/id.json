@@ -37,7 +37,15 @@
     "brain_profile": "Profil Otak",
     "score_breakdown": "Rincian Skor",
     "share": "Bagikan Hasilmu",
-    "related_tests": "Tes Terkait"
+    "related_tests": "Tes Terkait",
+    "moreTests": "Jelajahi lagi",
+    "percentileStat": "Hanya <strong>{percent}%</strong> memiliki usia mental yang sama"
+  },
+  "related": {
+    "emotionalAge": "Usia Emosional",
+    "brainType": "Tipe Otak",
+    "eqTest": "Tes EQ",
+    "iqTest": "Tes IQ"
   },
   "challenge": {
     "memory_name": "Memori",

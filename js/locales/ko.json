@@ -37,7 +37,15 @@
     "brain_profile": "두뇌 프로필",
     "score_breakdown": "점수 분석",
     "share": "결과 공유하기",
-    "related_tests": "관련 테스트"
+    "related_tests": "관련 테스트",
+    "moreTests": "더 많은 테스트",
+    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 정신 연령입니다"
+  },
+  "related": {
+    "emotionalAge": "감정 연령",
+    "brainType": "뇌 유형",
+    "eqTest": "EQ 테스트",
+    "iqTest": "IQ 테스트"
   },
   "challenge": {
     "memory_name": "기억력",

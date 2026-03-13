@@ -37,7 +37,15 @@
     "brain_profile": "Gehirn-Profil",
     "score_breakdown": "Punkteaufschluesselung",
     "share": "Ergebnis teilen",
-    "related_tests": "Verwandte Tests"
+    "related_tests": "Verwandte Tests",
+    "moreTests": "Mehr entdecken",
+    "percentileStat": "Nur <strong>{percent}%</strong> teilen dein mentales Alter"
+  },
+  "related": {
+    "emotionalAge": "Emotionales Alter",
+    "brainType": "Gehirntyp",
+    "eqTest": "EQ-Test",
+    "iqTest": "IQ-Test"
   },
   "challenge": {
     "memory_name": "Gedaechtnis",

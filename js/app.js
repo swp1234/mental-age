@@ -1040,6 +1040,9 @@ class BrainScanApp {
         const descEl = document.getElementById('result-description');
         if (descEl) descEl.innerHTML = '<p>' + i18n.t(catData.descriptionKey) + '</p>';
 
+        // Percentile stat
+        this.displayPercentileStat();
+
         // Radar chart
         this.drawRadarChart();
 
@@ -1088,6 +1091,32 @@ class BrainScanApp {
                 range: '56-80'
             }
         };
+    }
+
+    // ========== PERCENTILE STAT ==========
+
+    displayPercentileStat() {
+        const percentileEl = document.getElementById('percentile-stat');
+        if (!percentileEl) return;
+
+        // Calculate percentile based on mental age distribution
+        // Simulate a normal distribution with mean 28, std 12
+        const age = this.mentalAge;
+        let percentile;
+
+        if (age <= 10) percentile = 5;
+        else if (age <= 15) percentile = 12;
+        else if (age <= 20) percentile = 22;
+        else if (age <= 25) percentile = 35;
+        else if (age <= 30) percentile = 48;
+        else if (age <= 35) percentile = 38;
+        else if (age <= 40) percentile = 28;
+        else if (age <= 50) percentile = 18;
+        else if (age <= 60) percentile = 10;
+        else percentile = 6;
+
+        const text = i18n.t('result.percentileStat').replace('{percent}', percentile);
+        percentileEl.innerHTML = text;
     }
 
     // ========== RADAR CHART ==========

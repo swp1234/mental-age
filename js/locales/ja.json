@@ -37,7 +37,15 @@
     "brain_profile": "脳プロフィール",
     "score_breakdown": "スコア分析",
     "share": "結果をシェアする",
-    "related_tests": "関連テスト"
+    "related_tests": "関連テスト",
+    "moreTests": "もっと見る",
+    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じ精神年齢です"
+  },
+  "related": {
+    "emotionalAge": "感情年齢",
+    "brainType": "脳タイプ",
+    "eqTest": "EQテスト",
+    "iqTest": "IQテスト"
   },
   "challenge": {
     "memory_name": "記憶力",

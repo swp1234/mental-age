@@ -247,6 +247,8 @@
 
                 <div class="result-description" id="result-description"></div>
 
+                <p class="percentile-stat" id="percentile-stat"></p>
+
                 <!-- Score Breakdown -->
                 <div class="scores-section">
                     <h3 data-i18n="result.score_breakdown">Score Breakdown</h3>
@@ -266,15 +268,16 @@
                     </div>
                 </div>
 
-                <!-- Related Apps -->
-                <section class="related-apps" style="margin:24px 0;padding:20px;background:rgba(255,255,255,0.05);border-radius:16px;border:1px solid rgba(255,255,255,0.1);">
-                  <h3 style="font-size:16px;font-weight:700;margin-bottom:14px;color:#aaa;" data-i18n="result.related_tests">Related Tests</h3>
-                  <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                    <a href="/blood-type/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">Blood Type Test</a>
-                    <a href="/brain-type/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">Brain Type</a>
-                    <a href="/numerology/" style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;text-decoration:none;color:inherit;font-size:13px;font-weight:600;">Numerology</a>
+                <!-- Related Tests -->
+                <div class="related-tests">
+                  <h3 data-i18n="result.moreTests">Explore More</h3>
+                  <div class="related-grid">
+                    <a href="/emotional-age/" class="related-card" style="--card-color: #9b59b6"><span class="related-emoji">💭</span><span class="related-name" data-i18n="related.emotionalAge">Emotional Age</span></a>
+                    <a href="/brain-type/" class="related-card" style="--card-color: #e74c3c"><span class="related-emoji">🧠</span><span class="related-name" data-i18n="related.brainType">Brain Type</span></a>
+                    <a href="/eq-test/" class="related-card" style="--card-color: #00bcd4"><span class="related-emoji">📊</span><span class="related-name" data-i18n="related.eqTest">EQ Test</span></a>
+                    <a href="/iq-test/" class="related-card" style="--card-color: #2ecc71"><span class="related-emoji">📐</span><span class="related-name" data-i18n="related.iqTest">IQ Test</span></a>
                   </div>
-                </section>
+                </div>
 
                 <!-- Retry Button -->
                 <button id="retry-btn" class="btn btn-secondary" data-i18n="button.retry">Try Again</button>

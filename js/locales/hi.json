@@ -37,7 +37,15 @@
     "brain_profile": "\u092c\u094d\u0930\u0947\u0928 \u092a\u094d\u0930\u094b\u092b\u093e\u0907\u0932",
     "score_breakdown": "\u0938\u094d\u0915\u094b\u0930 \u0935\u093f\u0936\u094d\u0932\u0947\u0937\u0923",
     "share": "\u0905\u092a\u0928\u093e \u092a\u0930\u093f\u0923\u093e\u092e \u0936\u0947\u092f\u0930 \u0915\u0930\u0947\u0902",
-    "related_tests": "\u0938\u0902\u092c\u0902\u0927\u093f\u0924 \u091f\u0947\u0938\u094d\u091f"
+    "related_tests": "\u0938\u0902\u092c\u0902\u0927\u093f\u0924 \u091f\u0947\u0938\u094d\u091f",
+    "moreTests": "और जानें",
+    "percentileStat": "केवल <strong>{percent}%</strong> का आपके जैसी मानसिक उम्र है"
+  },
+  "related": {
+    "emotionalAge": "भावनात्मक उम्र",
+    "brainType": "मस्तिष्क प्रकार",
+    "eqTest": "EQ परीक्षण",
+    "iqTest": "IQ परीक्षण"
   },
   "challenge": {
     "memory_name": "\u092f\u093e\u0926\u0926\u093e\u0936\u094d\u0924",

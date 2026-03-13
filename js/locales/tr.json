@@ -37,7 +37,15 @@
     "brain_profile": "Beyin Profili",
     "score_breakdown": "Skor Analizi",
     "share": "Sonucunu Paylas",
-    "related_tests": "Ilgili Testler"
+    "related_tests": "Ilgili Testler",
+    "moreTests": "Daha fazla keşfet",
+    "percentileStat": "Sadece <strong>{percent}%</strong>'i senin zihinsel yaşına sahip"
+  },
+  "related": {
+    "emotionalAge": "Duygusal Yaş",
+    "brainType": "Beyin Tipi",
+    "eqTest": "EQ Testi",
+    "iqTest": "IQ Testi"
   },
   "challenge": {
     "memory_name": "Hafiza",

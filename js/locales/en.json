@@ -37,7 +37,15 @@
     "brain_profile": "Brain Profile",
     "score_breakdown": "Score Breakdown",
     "share": "Share Your Result",
-    "related_tests": "Related Tests"
+    "related_tests": "Related Tests",
+    "moreTests": "Explore More",
+    "percentileStat": "Only <strong>{percent}%</strong> share your mental age"
+  },
+  "related": {
+    "emotionalAge": "Emotional Age",
+    "brainType": "Brain Type",
+    "eqTest": "EQ Test",
+    "iqTest": "IQ Test"
   },
   "challenge": {
     "memory_name": "Memory",

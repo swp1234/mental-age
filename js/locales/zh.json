@@ -37,7 +37,15 @@
     "brain_profile": "大脑档案",
     "score_breakdown": "分数分析",
     "share": "分享你的结果",
-    "related_tests": "相关测试"
+    "related_tests": "相关测试",
+    "moreTests": "探索更多",
+    "percentileStat": "仅 <strong>{percent}%</strong> 拥有与你相同的心理年龄"
+  },
+  "related": {
+    "emotionalAge": "情感年龄",
+    "brainType": "大脑类型",
+    "eqTest": "情商测试",
+    "iqTest": "智商测试"
   },
   "challenge": {
     "memory_name": "记忆力",
