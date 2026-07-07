@@ -11,6 +11,16 @@
             }
 
             detectLanguage() {
+                try {
+                    const params = new URLSearchParams(window.location.search || '');
+                    const urlLang = params.get('lang');
+                    if (urlLang && this.supportedLanguages.includes(urlLang)) {
+                        return urlLang;
+                    }
+                } catch (e) {
+                    // URL language hints are best-effort only.
+                }
+
                 // Check localStorage for saved preference
                 const saved = localStorage.getItem('preferredLanguage');
                 if (saved && this.supportedLanguages.includes(saved)) {
@@ -90,6 +100,7 @@
             }
 
             updateUI() {
+                document.documentElement.lang = this.currentLang;
                 // Update all elements with data-i18n attribute
                 document.querySelectorAll('[data-i18n]').forEach(element => {
                     const key = element.getAttribute('data-i18n');
