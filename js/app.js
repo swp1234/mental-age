@@ -13,6 +13,7 @@ class BrainScanApp {
         ];
         this.challengeIcons = ['🧩', '⚡', '🔷', '💬', '🎯', '😊', '🔢'];
         this._timers = [];
+        this.autoStartConsumed = false;
         this.hideLoader();
         this.init();
     }
@@ -38,13 +39,14 @@ class BrainScanApp {
         this.setupEventListeners();
         this.setupServiceWorker();
         this.startAgeCounterAnimation();
+        this.tryAutoStart();
     }
 
     // ========== EVENT LISTENERS ==========
 
     setupEventListeners() {
         const startBtn = document.getElementById('start-btn');
-        if (startBtn) startBtn.addEventListener('click', () => this.startTest());
+        if (startBtn) startBtn.addEventListener('click', () => this.startTest(startBtn.getAttribute('data-cta-surface') || 'intro_primary'));
 
         const retryBtn = document.getElementById('retry-btn');
         if (retryBtn) retryBtn.addEventListener('click', () => this.resetTest());
@@ -85,6 +87,38 @@ class BrainScanApp {
         }
     }
 
+    trackEvent(eventName, params = {}) {
+        const payload = Object.assign({ app_name: 'mental-age' }, params);
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, payload);
+        } else {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(Object.assign({ event: eventName }, payload));
+        }
+    }
+
+    getUrlParam(name) {
+        try {
+            return new URLSearchParams(window.location.search || '').get(name) || '';
+        } catch (error) {
+            return '';
+        }
+    }
+
+    getAutoStartSurface() {
+        if (this.getUrlParam('start') !== '1') return '';
+        return this.getUrlParam('surface') || this.getUrlParam('utm_content') || 'url_start';
+    }
+
+    tryAutoStart() {
+        const surface = this.getAutoStartSurface();
+        if (!surface || this.autoStartConsumed) return;
+        const introScreen = document.getElementById('intro-screen');
+        if (!introScreen || !introScreen.classList.contains('active')) return;
+        this.autoStartConsumed = true;
+        setTimeout(() => this.startTest(surface), 80);
+    }
+
     toggleLangMenu() {
         const menu = document.getElementById('lang-menu');
         menu.classList.toggle('hidden');
@@ -101,14 +135,21 @@ class BrainScanApp {
 
     // ========== FLOW CONTROL ==========
 
-    startTest() {
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'test_start', {
-                app_name: 'mental-age',
-                content_type: 'brain_scan',
-                event_category: 'engagement'
-            });
-        }
+    startTest(ctaSurface = 'intro_primary') {
+        this.trackEvent('mental_age_intro_start_click', {
+            event_category: 'mental_age',
+            cta_surface: ctaSurface
+        });
+        this.trackEvent('quiz_start', {
+            event_category: 'mental_age',
+            content_type: 'brain_scan',
+            cta_surface: ctaSurface
+        });
+        this.trackEvent('test_start', {
+            content_type: 'brain_scan',
+            event_category: 'engagement',
+            cta_surface: ctaSurface
+        });
         this.currentChallenge = 0;
         this.scores = [];
         this.mentalAge = null;
