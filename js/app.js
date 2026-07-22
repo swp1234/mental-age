@@ -14,6 +14,8 @@ class BrainScanApp {
         this.challengeIcons = ['🧩', '⚡', '🔷', '💬', '🎯', '😊', '🔢'];
         this._timers = [];
         this.autoStartConsumed = false;
+        this.resultViewTracked = false;
+        this.resultInlineAdLoaded = false;
         this.hideLoader();
         this.init();
     }
@@ -39,6 +41,7 @@ class BrainScanApp {
         this.setupEventListeners();
         this.setupServiceWorker();
         this.startAgeCounterAnimation();
+        this.configureGuideLink();
         this.tryAutoStart();
     }
 
@@ -126,10 +129,42 @@ class BrainScanApp {
 
     async changeLang(lang) {
         await i18n.setLanguage(lang);
+        this.configureGuideLink();
         document.getElementById('lang-menu').classList.add('hidden');
         // Re-render result if on result screen
         if (this.category) {
             this.displayResult();
+        }
+    }
+
+    configureGuideLink() {
+        let lang = document.documentElement.lang || this.getUrlParam('lang') || 'en';
+        const supported = ['ko', 'en', 'zh', 'hi', 'ru', 'ja', 'es', 'pt', 'id', 'tr', 'de', 'fr'];
+        if (!supported.includes(lang)) lang = 'en';
+        const labels = {
+            ko: '결과를 안전하게 해석하는 법', en: 'How to interpret this result safely',
+            zh: '如何安全地解读这个结果', hi: 'इस परिणाम को सुरक्षित ढंग से समझें',
+            ru: 'Как безопасно интерпретировать результат', ja: '結果を安全に読み解く方法',
+            es: 'Cómo interpretar este resultado con cuidado', pt: 'Como interpretar este resultado com cuidado',
+            id: 'Cara menafsirkan hasil ini dengan aman', tr: 'Bu sonucu güvenle yorumlama',
+            de: 'Dieses Ergebnis verantwortungsvoll deuten', fr: 'Interpréter ce résultat avec prudence'
+        };
+        const link = document.getElementById('mental-age-guide-link');
+        const label = document.getElementById('mental-age-guide-label');
+        const note = document.getElementById('result-boundary-note');
+        if (link) {
+            link.href = `/portal/blog/${lang}/mental-age-test-brain-quiz-guide.html?surface=mental_age_result_guide`;
+            link.onclick = () => this.trackEvent('mental_age_guide_click', { surface: 'result_related', guide_locale: lang });
+        }
+        if (label) label.textContent = labels[lang] || labels.en;
+        if (note) {
+            const notes = {
+                ko: '오락용 결과이며 임상적 정신연령·IQ·뇌 연령 평가가 아닙니다.',
+                zh: '本结果仅供娱乐，不是临床心理年龄、智商或脑龄评估。',
+                pt: 'Resultado recreativo: não é uma avaliação clínica de idade mental, QI ou idade cerebral.',
+                es: 'Resultado recreativo: no es una evaluación clínica de edad mental, CI o edad cerebral.'
+            };
+            note.textContent = notes[lang] || 'Entertainment result: this is not a clinical mental-age, IQ, or brain-age assessment.';
         }
     }
 
@@ -154,6 +189,7 @@ class BrainScanApp {
         this.scores = [];
         this.mentalAge = null;
         this.category = null;
+        this.resultViewTracked = false;
         this._clearTimers();
         this.showScreen('challenge-screen');
         this.runChallenge();
@@ -1093,6 +1129,34 @@ class BrainScanApp {
 
         // Confetti
         this.createConfetti();
+
+        this.ensureResultAdLoaded();
+        if (!this.resultViewTracked) {
+            this.resultViewTracked = true;
+            const params = {
+                surface: 'result_screen', mental_age: this.mentalAge,
+                category: this.category, lang: document.documentElement.lang || 'en'
+            };
+            this.trackEvent('result_view', params);
+            this.trackEvent('mental_age_result_view', params);
+        }
+    }
+
+    ensureResultAdLoaded() {
+        if (this.resultInlineAdLoaded) return;
+        const adNode = document.querySelector('#result-inline-ad .adsbygoogle');
+        if (!adNode) return;
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (error) {
+            // Ad blockers or delayed AdSense initialization must not break results.
+        }
+        this.resultInlineAdLoaded = true;
+        this.trackEvent('mental_age_result_ad_impression', {
+            surface: 'result_inline', ad_surface: adNode.getAttribute('data-ad-surface') || 'mental_age_result_mid',
+            ad_slot: adNode.getAttribute('data-ad-slot') || 'auto', mental_age: this.mentalAge,
+            category: this.category, lang: document.documentElement.lang || 'en'
+        });
     }
 
     _getCategoryData() {

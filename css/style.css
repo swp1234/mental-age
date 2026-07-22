@@ -1341,6 +1341,16 @@ body {
     line-height: 1.8;
 }
 
+.result-boundary-note {
+    margin: -12px 0 24px;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.55;
+}
+
 .percentile-stat {
     text-align: center;
     font-size: 14px;
@@ -1520,6 +1530,12 @@ body {
     background: rgba(255, 255, 255, 0.05);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.related-card.guide-card {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .related-emoji {
