@@ -1143,20 +1143,7 @@ class BrainScanApp {
     }
 
     ensureResultAdLoaded() {
-        if (this.resultInlineAdLoaded) return;
-        const adNode = document.querySelector('#result-inline-ad .adsbygoogle');
-        if (!adNode) return;
-        try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (error) {
-            // Ad blockers or delayed AdSense initialization must not break results.
-        }
-        this.resultInlineAdLoaded = true;
-        this.trackEvent('mental_age_result_ad_impression', {
-            surface: 'result_inline', ad_surface: adNode.getAttribute('data-ad-surface') || 'mental_age_result_mid',
-            ad_slot: adNode.getAttribute('data-ad-slot') || 'auto', mental_age: this.mentalAge,
-            category: this.category, lang: document.documentElement.lang || 'en'
-        });
+        // Auto Ads owns placement and paid-impression measurement.
     }
 
     _getCategoryData() {
