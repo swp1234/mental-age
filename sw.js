@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mental-age-v4';
+const CACHE_NAME = 'mental-age-v5';
 const ASSETS = [
   '/mental-age/',
   '/mental-age/index.html',

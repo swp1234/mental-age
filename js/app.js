@@ -139,12 +139,14 @@ class BrainChallengeApp {
         let lang = document.documentElement.lang || this.getUrlParam('lang') || 'en';
         const supported = ['ko', 'en', 'zh', 'hi', 'ru', 'ja', 'es', 'pt', 'id', 'tr', 'de', 'fr'];
         if (!supported.includes(lang)) lang = 'en';
+        const localizedGuides = ['en', 'es', 'pt', 'zh'];
+        const guideLang = localizedGuides.includes(lang) ? lang : 'en';
         const link = document.getElementById('mental-age-guide-link');
         const label = document.getElementById('mental-age-guide-label');
         const note = document.getElementById('result-boundary-note');
         if (link) {
-            link.href = `/portal/blog/${lang}/mental-age-test-brain-quiz-guide.html?surface=mental_age_result_guide`;
-            link.onclick = () => this.trackEvent('mental_age_guide_click', { surface: 'result_related', guide_locale: lang });
+            link.href = `/portal/blog/${guideLang}/mental-age-test-brain-quiz-guide.html?surface=mental_age_result_guide`;
+            link.onclick = () => this.trackEvent('mental_age_guide_click', { surface: 'result_related', guide_locale: guideLang, app_locale: lang });
         }
         if (label) label.textContent = i18n.t('result.guide_label');
         if (note) note.textContent = i18n.t('result.boundary_note');
