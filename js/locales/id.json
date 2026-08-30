@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "Tes Usia Mental",
+    "title": "Tantangan bergaya usia mental - 7 gim mini",
     "loading": "Memuat...",
     "skipLink": "Langsung ke konten utama"
   },
   "meta": {
-    "description": "Temukan usia mentalmu yang sebenarnya dengan 7 tantangan kognitif mini interaktif! Memori, kecepatan reaksi, pengenalan pola, fokus dan lainnya. Bagikan hasil scan otakmu!",
-    "keywords": "tes usia mental, tes usia otak, tes kognitif, tes memori, tes kecepatan reaksi, scan otak",
-    "og_title": "Tes Usia Mental - 7 Tantangan Otak | DopaBrain",
-    "og_description": "Selesaikan 7 tantangan kognitif mini untuk menemukan usia mentalmu! Grid memori, kecepatan reaksi, pengenalan pola dan lainnya.",
-    "twitter_title": "Tes Usia Mental - 7 Tantangan Otak",
-    "twitter_description": "Selesaikan 7 tantangan kognitif mini untuk menemukan usia mentalmu!"
+    "description": "Coba 7 gim mini untuk memori, reaksi, pola, fokus, kata, emosi, dan angka. Dapatkan skor rata-rata transparan; hanya hiburan.",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "Tantangan bergaya usia mental - 7 gim mini | DopaBrain",
+    "og_description": "Coba 7 gim mini untuk memori, reaksi, pola, fokus, kata, emosi, dan angka. Dapatkan skor rata-rata transparan; hanya hiburan.",
+    "twitter_title": "Tantangan bergaya usia mental - 7 gim mini",
+    "twitter_description": "Coba 7 gim mini untuk memori, reaksi, pola, fokus, kata, emosi, dan angka. Dapatkan skor rata-rata transparan; hanya hiburan."
   },
   "intro": {
-    "title": "Tes Usia Mental",
+    "title": "Tantangan bergaya usia mental",
     "subtitle": "7 Tantangan Kognitif Mini",
-    "description": "Selesaikan 7 tantangan otak untuk menemukan usia mentalmu yang sebenarnya.",
+    "description": "Selesaikan 7 gim mini dan bandingkan skor kategorimu.",
     "description_2": "Memori, kecepatan, fokus, pengenalan pola dan lainnya!",
     "time_estimate": "Waktu: sekitar 3 menit",
-    "yourMentalAge": "Usia mentalmu",
-    "resultPreview": "Kebanyakan orang mengira usia mereka 25... tapi otak bilang 42!",
-    "socialProof": "2.340+ scan otak selesai"
+    "resultPreview": "Tujuh gim mini, satu skor rata-rata transparan.",
+    "privacyNote": "Tanpa pendaftaran · hasil tetap di perangkat ini"
   },
   "button": {
-    "start": "Temukan usia mentalmu",
+    "start": "Mulai tantangan otak",
     "retry": "Coba Lagi",
     "submit": "Kirim",
     "share_download": "Unduh Gambar",
@@ -32,17 +31,21 @@
     "share_copy": "Salin Tautan"
   },
   "analyzing": {
-    "title": "Menganalisis data otakmu...",
+    "title": "Menghitung skor rata-rata...",
     "subtitle": "Tunggu sebentar ya"
   },
   "result": {
-    "age_label": "tahun",
-    "brain_profile": "Profil Otak",
     "score_breakdown": "Rincian Skor",
     "share": "Bagikan Hasilmu",
     "related_tests": "Tes Terkait",
     "moreTests": "Jelajahi lagi",
-    "percentileStat": "Hanya <strong>{percent}%</strong> memiliki usia mental yang sama"
+    "score_label": "Skor rata-rata",
+    "challenge_profile": "Profil tantangan",
+    "session_summary": "Ringkasan sesi",
+    "score_context": "Rata-rata tujuh skor gim mini yang terlihat: {score}/100",
+    "description": "Gunakan profil kategori untuk membandingkan sesi ini. Skor hiburan ini tidak mengukur usia mental, usia otak, atau kecerdasan.",
+    "boundary_note": "Hasil hiburan: rata-rata hanya mencerminkan tujuh gim mini ini dan bukan penilaian klinis usia mental, IQ, atau usia otak.",
+    "guide_label": "Cara menafsirkan hasil ini dengan aman"
   },
   "related": {
     "emotionalAge": "Usia Emosional",
@@ -123,32 +126,15 @@
     "good": "Bagus!",
     "keep_trying": "Terus mencoba!"
   },
-  "category": {
-    "child": "Pikiran Anak",
-    "child_tagline": "Rasa ingin tahu murni dan imajinasi tanpa batas!",
-    "child_description": "Otakmu beroperasi dengan keajaiban dan spontanitas masa muda. Kamu mendekati masalah dengan mata segar dan solusi kreatif. Meskipun beberapa area kognitif masih berkembang, pemikiran imajinatifmu adalah hadiah yang kuat.",
-    "teenager": "Semangat Remaja",
-    "teenager_tagline": "Refleks cepat, pemikiran berani!",
-    "teenager_description": "Pikiranmu bergerak cepat dan berani mengambil risiko. Kamu punya waktu reaksi yang baik dan tidak takut berpikir di luar kotak. Gaya kognitifmu memadukan energi dengan keterampilan analitis yang berkembang.",
-    "youngAdult": "Dewasa Muda",
-    "youngAdult_tagline": "Pikiran tajam, pemikiran seimbang!",
-    "youngAdult_description": "Otakmu berfungsi optimal. Kamu menunjukkan performa kuat dalam memori, kecepatan, dan penalaran. Ini adalah titik manis kognitif di mana pemikiran cepat bertemu dengan penilaian matang.",
-    "matureMind": "Pikiran Dewasa",
-    "matureMind_tagline": "Kebijaksanaan bertemu pengalaman!",
-    "matureMind_description": "Profil kognitifmu mencerminkan pemrosesan mendalam dan analisis hati-hati. Kamu unggul dalam pengenalan pola dan kecerdasan emosional. Otakmu memprioritaskan akurasi dan pemahaman di atas kecepatan murni.",
-    "elderSage": "Bijak Sesepuh",
-    "elderSage_tagline": "Kebijaksanaan usia dalam setiap pemikiran!",
-    "elderSage_description": "Pikiranmu memproses dunia melalui lapisan kebijaksanaan dan refleksi. Kamu memiliki kemampuan pembacaan emosi dan pengenalan pola yang luar biasa. Kekuatan kognitifmu terletak pada kedalaman pemahaman."
-  },
   "message": {
     "copy_success": "Tautan disalin!",
     "copy_error": "Gagal menyalin tautan."
   },
   "share": {
-    "twitterText": "Hasil scan otak: usia mentalku {age} tahun! {emoji} {type} - {tagline} Punyamu?",
-    "copyText": "Hasil scan otak: usia mentalku {age} tahun! {emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "Usia Mentalku Adalah...",
-    "canvasTitle": "Tes Usia Mental"
+    "twitterText": "Rata-rata saya di tujuh gim mini otak adalah {score}/100. Coba tantangan yang sama!",
+    "copyText": "Rata-rata saya di tujuh gim mini otak adalah {score}/100. {url}",
+    "canvasSubtitle": "Skor tujuh tantangan saya",
+    "canvasTitle": "Tantangan bergaya usia mental"
   },
   "game": {
     "back": "DopaBrain Beranda"

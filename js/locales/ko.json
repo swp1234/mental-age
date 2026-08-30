@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "정신 나이 테스트",
+    "title": "정신 연령 스타일 두뇌 챌린지",
     "loading": "로딩 중...",
     "skipLink": "본문으로 건너뛰기"
   },
   "meta": {
-    "description": "7가지 인지 미니 챌린지로 진짜 정신 나이를 측정하세요! 기억력, 반응속도, 패턴인식, 집중력 테스트. 결과를 공유하세요!",
-    "keywords": "정신 나이 테스트, 뇌 나이 테스트, 인지 테스트, 기억력 테스트, 반응속도 테스트, 브레인 스캔",
-    "og_title": "정신 나이 테스트 - 7가지 두뇌 챌린지 | DopaBrain",
-    "og_description": "7가지 인지 미니 챌린지로 진짜 정신 나이를 측정하세요! 기억력, 반응속도, 패턴인식 등 두뇌 스캔!",
-    "twitter_title": "정신 나이 테스트 - 7가지 두뇌 챌린지",
-    "twitter_description": "7가지 인지 미니 챌린지로 진짜 정신 나이를 측정하세요!"
+    "description": "기억, 반응, 패턴, 집중, 단어, 감정, 숫자 미니게임 7개에 도전하세요. 투명한 평균 점수를 제공하며 재미를 위한 게임입니다.",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "정신 연령 스타일 두뇌 챌린지 | DopaBrain",
+    "og_description": "기억, 반응, 패턴, 집중, 단어, 감정, 숫자 미니게임 7개에 도전하세요. 투명한 평균 점수를 제공하며 재미를 위한 게임입니다.",
+    "twitter_title": "정신 연령 스타일 두뇌 챌린지",
+    "twitter_description": "기억, 반응, 패턴, 집중, 단어, 감정, 숫자 미니게임 7개에 도전하세요. 투명한 평균 점수를 제공하며 재미를 위한 게임입니다."
   },
   "intro": {
-    "title": "정신 나이 테스트",
+    "title": "정신 연령 스타일 챌린지",
     "subtitle": "7가지 인지 미니 챌린지",
-    "description": "7가지 두뇌 챌린지를 완료하고 진짜 정신 나이를 알아보세요.",
+    "description": "7개 두뇌 미니게임을 완료하고 영역별 점수를 비교하세요.",
     "description_2": "기억력, 반응속도, 집중력, 패턴인식 등 다양한 테스트!",
     "time_estimate": "소요 시간: 약 3분",
-    "yourMentalAge": "당신의 정신 나이는",
-    "resultPreview": "대부분 25세라고 생각하지만... 뇌는 42세라고 합니다!",
-    "socialProof": "2,340명 이상의 두뇌 스캔 완료"
+    "resultPreview": "7개 미니게임, 하나의 투명한 평균 점수.",
+    "privacyNote": "가입 없음 · 결과는 이 기기에만 남습니다"
   },
   "button": {
-    "start": "내 정신 나이 알아보기",
+    "start": "두뇌 챌린지 시작하기",
     "retry": "다시 하기",
     "submit": "제출",
     "share_download": "이미지 저장",
@@ -32,17 +31,21 @@
     "share_copy": "링크 복사"
   },
   "analyzing": {
-    "title": "두뇌 데이터를 분석 중...",
+    "title": "평균 점수를 계산하고 있어요...",
     "subtitle": "잠시만 기다려 주세요"
   },
   "result": {
-    "age_label": "세",
-    "brain_profile": "두뇌 프로필",
     "score_breakdown": "점수 분석",
     "share": "결과 공유하기",
     "related_tests": "관련 테스트",
     "moreTests": "더 많은 테스트",
-    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 정신 연령입니다"
+    "score_label": "평균 점수",
+    "challenge_profile": "챌린지 프로필",
+    "session_summary": "이번 세션 요약",
+    "score_context": "화면에 표시된 7개 미니게임 점수의 평균: {score}/100",
+    "description": "영역별 프로필로 이번 세션을 비교해 보세요. 이 오락용 게임 점수는 정신 연령, 뇌 연령, 지능을 측정하지 않습니다.",
+    "boundary_note": "오락용 결과입니다. 평균은 7개 미니게임만 반영하며 임상적 정신 연령, IQ, 뇌 연령 평가가 아닙니다.",
+    "guide_label": "결과를 안전하게 해석하는 법"
   },
   "related": {
     "emotionalAge": "감정 연령",
@@ -123,32 +126,15 @@
     "good": "좋아요!",
     "keep_trying": "계속 도전!"
   },
-  "category": {
-    "child": "어린 마음",
-    "child_tagline": "순수한 호기심과 끝없는 상상력!",
-    "child_description": "당신의 두뇌는 젊음의 경이로움과 즉흥성으로 작동합니다. 새로운 시각과 창의적인 해결책으로 문제에 접근합니다. 일부 인지 영역은 아직 발전 중이지만, 풍부한 상상력이 강력한 무기입니다.",
-    "teenager": "틴에이저 정신",
-    "teenager_tagline": "빠른 반사신경, 대담한 사고!",
-    "teenager_description": "마음이 빠르게 움직이고 위험을 감수합니다. 반응 속도가 뛰어나고 틀에 박힌 사고를 거부합니다. 에너지와 성장하는 분석력이 어우러진 인지 스타일입니다.",
-    "youngAdult": "청년 두뇌",
-    "youngAdult_tagline": "날카로운 정신, 균형 잡힌 사고!",
-    "youngAdult_description": "두뇌가 최고 성능으로 작동 중입니다. 기억력, 속도, 추론 능력 모두 뛰어납니다. 빠른 사고와 성숙한 판단력이 만나는 인지적 최적점에 있습니다.",
-    "matureMind": "성숙한 정신",
-    "matureMind_tagline": "지혜와 경험의 만남!",
-    "matureMind_description": "깊은 처리와 신중한 분석을 보여주는 인지 프로필입니다. 패턴 인식과 감성 지능이 뛰어납니다. 단순한 속도보다 정확성과 이해를 우선시하는 두뇌입니다.",
-    "elderSage": "현자의 지혜",
-    "elderSage_tagline": "모든 생각에 담긴 깊은 지혜!",
-    "elderSage_description": "세상을 지혜와 성찰의 여러 겹으로 처리하는 마음입니다. 감정 판독 능력과 패턴 인식이 탁월합니다. 이해의 깊이에서 인지적 강점이 빛납니다."
-  },
   "message": {
     "copy_success": "링크가 복사되었습니다!",
     "copy_error": "링크 복사에 실패했습니다."
   },
   "share": {
-    "twitterText": "두뇌 스캔 결과 내 정신 나이는 {age}세! {emoji} {type} - {tagline} 당신은?",
-    "copyText": "두뇌 스캔 결과 내 정신 나이는 {age}세! {emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "나의 정신 나이는...",
-    "canvasTitle": "정신 나이 테스트"
+    "twitterText": "7개 두뇌 미니게임 평균이 {score}/100점이었어요. 같은 챌린지에 도전해 보세요!",
+    "copyText": "7개 두뇌 미니게임 평균이 {score}/100점이었어요. {url}",
+    "canvasSubtitle": "나의 7개 챌린지 점수",
+    "canvasTitle": "정신 연령 스타일 챌린지"
   },
   "game": {
     "back": "DopaBrain 홈"

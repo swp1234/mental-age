@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "Mentales Alter Test",
+    "title": "Mental-Age-Rätsel – 7 Mini-Spiele",
     "loading": "Wird geladen...",
     "skipLink": "Zum Hauptinhalt springen"
   },
   "meta": {
-    "description": "Teste dein echtes mentales Alter mit 7 interaktiven kognitiven Mini-Herausforderungen! Gedaechtnis, Reaktionsgeschwindigkeit, Mustererkennung, Fokus und mehr. Teile deine Ergebnisse!",
-    "keywords": "mentales Alter Test, Gehirnalter Test, kognitiver Test, Gedaechtnistest, Reaktionstest, Gehirn-Scan",
-    "og_title": "Mentales Alter Test - 7 Gehirn-Herausforderungen | DopaBrain",
-    "og_description": "Absolviere 7 kognitive Mini-Herausforderungen, um dein wahres mentales Alter zu entdecken! Gedaechtnis-Raster, Reaktionsgeschwindigkeit, Mustererkennung und mehr.",
-    "twitter_title": "Mentales Alter Test - 7 Gehirn-Herausforderungen",
-    "twitter_description": "Absolviere 7 kognitive Mini-Herausforderungen, um dein wahres mentales Alter zu entdecken!"
+    "description": "Probiere 7 Mini-Spiele zu Gedächtnis, Reaktion, Mustern, Fokus, Wörtern, Emotionen und Zahlen. Erhalte einen transparenten Durchschnittswert; nur zur Unterhaltung.",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "Mental-Age-Rätsel – 7 Mini-Spiele | DopaBrain",
+    "og_description": "Probiere 7 Mini-Spiele zu Gedächtnis, Reaktion, Mustern, Fokus, Wörtern, Emotionen und Zahlen. Erhalte einen transparenten Durchschnittswert; nur zur Unterhaltung.",
+    "twitter_title": "Mental-Age-Rätsel – 7 Mini-Spiele",
+    "twitter_description": "Probiere 7 Mini-Spiele zu Gedächtnis, Reaktion, Mustern, Fokus, Wörtern, Emotionen und Zahlen. Erhalte einen transparenten Durchschnittswert; nur zur Unterhaltung."
   },
   "intro": {
-    "title": "Mentales Alter Test",
+    "title": "Mental-Age-Rätsel",
     "subtitle": "7 Kognitive Mini-Herausforderungen",
-    "description": "Absolviere 7 Gehirn-Herausforderungen, um dein echtes mentales Alter zu entdecken.",
+    "description": "Absolviere 7 Mini-Spiele und vergleiche deine Kategorien.",
     "description_2": "Gedaechtnis, Geschwindigkeit, Fokus, Mustererkennung und mehr!",
     "time_estimate": "Dauer: etwa 3 Minuten",
-    "yourMentalAge": "Dein mentales Alter",
-    "resultPreview": "Die meisten denken, sie waeren 25... aber ihr Gehirn sagt 42!",
-    "socialProof": "2.340+ Gehirn-Scans abgeschlossen"
+    "resultPreview": "Sieben Mini-Spiele, ein transparenter Durchschnittswert.",
+    "privacyNote": "Keine Anmeldung · Ergebnisse bleiben auf diesem Gerät"
   },
   "button": {
-    "start": "Entdecke dein mentales Alter",
+    "start": "Gehirn-Challenge starten",
     "retry": "Nochmal versuchen",
     "submit": "Absenden",
     "share_download": "Bild herunterladen",
@@ -32,17 +31,21 @@
     "share_copy": "Link kopieren"
   },
   "analyzing": {
-    "title": "Deine Gehirndaten werden analysiert...",
+    "title": "Durchschnittswert wird berechnet ...",
     "subtitle": "Bitte einen Moment Geduld"
   },
   "result": {
-    "age_label": "Jahre alt",
-    "brain_profile": "Gehirn-Profil",
     "score_breakdown": "Punkteaufschluesselung",
     "share": "Ergebnis teilen",
     "related_tests": "Verwandte Tests",
     "moreTests": "Mehr entdecken",
-    "percentileStat": "Nur <strong>{percent}%</strong> teilen dein mentales Alter"
+    "score_label": "Durchschnittswert",
+    "challenge_profile": "Challenge-Profil",
+    "session_summary": "Deine Rundenübersicht",
+    "score_context": "Durchschnitt aus sieben sichtbaren Mini-Spielwerten: {score}/100",
+    "description": "Nutze das Kategorienprofil, um diese Runde zu vergleichen. Der Wert ist nur ein Spielresultat und misst weder mentales Alter, Gehirnalter noch Intelligenz.",
+    "boundary_note": "Unterhaltungsergebnis: Der Durchschnitt gilt nur für diese sieben Mini-Spiele und ist keine klinische Bewertung von mentalem Alter, IQ oder Gehirnalter.",
+    "guide_label": "Dieses Ergebnis verantwortungsvoll deuten"
   },
   "related": {
     "emotionalAge": "Emotionales Alter",
@@ -123,32 +126,15 @@
     "good": "Gut!",
     "keep_trying": "Weiter so!"
   },
-  "category": {
-    "child": "Kindlicher Geist",
-    "child_tagline": "Reine Neugier und grenzenlose Fantasie!",
-    "child_description": "Dein Gehirn arbeitet mit dem Staunen und der Spontaneitaet der Jugend. Du naherst dich Problemen mit frischen Augen und kreativen Loesungen. Waehrend einige kognitive Bereiche noch in Entwicklung sind, ist dein fantasievolles Denken ein starkes Geschenk.",
-    "teenager": "Teen-Spirit",
-    "teenager_tagline": "Schnelle Reflexe, kuhnes Denken!",
-    "teenager_description": "Dein Verstand bewegt sich schnell und geht Risiken ein. Du hast starke Reaktionszeiten und scheust dich nicht, ueber den Tellerrand zu denken. Dein kognitiver Stil verbindet Energie mit wachsenden analytischen Faehigkeiten.",
-    "youngAdult": "Junger Erwachsener",
-    "youngAdult_tagline": "Scharfer Verstand, ausgewogenes Denken!",
-    "youngAdult_description": "Dein Gehirn laeuft auf Hochtouren. Du zeigst starke Leistungen in Gedaechtnis, Geschwindigkeit und logischem Denken. Dies ist der kognitive Sweet Spot, wo schnelles Denken auf reifes Urteilsvermoegen trifft.",
-    "matureMind": "Reifer Geist",
-    "matureMind_tagline": "Weisheit trifft Erfahrung!",
-    "matureMind_description": "Dein kognitives Profil spiegelt tiefe Verarbeitung und sorgfaeltige Analyse wider. Du glaenzt bei Mustererkennung und emotionaler Intelligenz. Dein Gehirn priorisiert Genauigkeit und Verstaendnis gegenueber reiner Geschwindigkeit.",
-    "elderSage": "Weiser Aeltester",
-    "elderSage_tagline": "Die Weisheit der Zeitalter in jedem Gedanken!",
-    "elderSage_description": "Dein Geist verarbeitet die Welt durch Schichten von Weisheit und Reflexion. Du hast aussergewoehnliche Faehigkeiten im emotionalen Lesen und in der Mustererkennung. Deine kognitive Staerke liegt in der Tiefe des Verstaendnisses."
-  },
   "message": {
     "copy_success": "Link kopiert!",
     "copy_error": "Link konnte nicht kopiert werden."
   },
   "share": {
-    "twitterText": "Gehirn-Scan Ergebnis: mein mentales Alter ist {age}! {emoji} {type} - {tagline} Wie alt ist deins?",
-    "copyText": "Gehirn-Scan Ergebnis: mein mentales Alter ist {age}! {emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "Mein Mentales Alter Ist...",
-    "canvasTitle": "Mentales Alter Test"
+    "twitterText": "Mein Durchschnitt in sieben Gehirn-Mini-Spielen: {score}/100. Probiere dieselbe Challenge!",
+    "copyText": "Mein Durchschnitt in sieben Gehirn-Mini-Spielen: {score}/100. {url}",
+    "canvasSubtitle": "Mein Sieben-Challenge-Wert",
+    "canvasTitle": "Mental-Age-Rätsel"
   },
   "game": {
     "back": "DopaBrain Startseite"

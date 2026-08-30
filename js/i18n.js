@@ -1,4 +1,4 @@
-// Mental Age Test - i18n Module
+// Mental Age-Style Brain Challenge - i18n Module
 // Wrapped in try-catch IIFE for FOUC prevention
 ;(function () {
     try {
@@ -33,8 +33,8 @@
                     return browserLang;
                 }
 
-                // Default: Korean
-                return 'ko';
+                // Stable canonical default: English
+                return 'en';
             }
 
             async loadTranslations(lang) {
@@ -106,7 +106,9 @@
                     const key = element.getAttribute('data-i18n');
                     const text = this.t(key);
 
-                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    if (element.tagName === 'META') {
+                        element.setAttribute('content', text);
+                    } else if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                         if (element.placeholder) {
                             element.placeholder = text;
                         }
@@ -114,6 +116,7 @@
                         element.textContent = text;
                     }
                 });
+                document.title = `${this.t('app.title')} | DopaBrain`;
             }
 
             updateLangButtons() {

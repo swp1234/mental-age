@@ -1,12 +1,11 @@
-// Mental Age Test - Brain Scan Engine
+// Mental Age-Style Brain Challenge Engine
 // 7 Interactive Cognitive Mini-Challenges
 
-class BrainScanApp {
+class BrainChallengeApp {
     constructor() {
         this.currentChallenge = 0;
         this.scores = []; // 0-100 per challenge
-        this.mentalAge = null;
-        this.category = null;
+        this.challengeScore = null;
         this.challenges = [
             'memory', 'reaction', 'pattern',
             'word', 'stroop', 'emotion', 'number'
@@ -40,7 +39,6 @@ class BrainScanApp {
         }
         this.setupEventListeners();
         this.setupServiceWorker();
-        this.startAgeCounterAnimation();
         this.configureGuideLink();
         this.tryAutoStart();
     }
@@ -84,7 +82,7 @@ class BrainScanApp {
     setupGA() {
         if (typeof gtag !== 'undefined') {
             gtag('event', 'page_view', {
-                page_title: 'Mental Age Test - Brain Scan',
+                page_title: 'Mental Age-Style Brain Challenge',
                 page_location: window.location.href
             });
         }
@@ -132,7 +130,7 @@ class BrainScanApp {
         this.configureGuideLink();
         document.getElementById('lang-menu').classList.add('hidden');
         // Re-render result if on result screen
-        if (this.category) {
+        if (this.challengeScore !== null) {
             this.displayResult();
         }
     }
@@ -141,14 +139,6 @@ class BrainScanApp {
         let lang = document.documentElement.lang || this.getUrlParam('lang') || 'en';
         const supported = ['ko', 'en', 'zh', 'hi', 'ru', 'ja', 'es', 'pt', 'id', 'tr', 'de', 'fr'];
         if (!supported.includes(lang)) lang = 'en';
-        const labels = {
-            ko: '결과를 안전하게 해석하는 법', en: 'How to interpret this result safely',
-            zh: '如何安全地解读这个结果', hi: 'इस परिणाम को सुरक्षित ढंग से समझें',
-            ru: 'Как безопасно интерпретировать результат', ja: '結果を安全に読み解く方法',
-            es: 'Cómo interpretar este resultado con cuidado', pt: 'Como interpretar este resultado com cuidado',
-            id: 'Cara menafsirkan hasil ini dengan aman', tr: 'Bu sonucu güvenle yorumlama',
-            de: 'Dieses Ergebnis verantwortungsvoll deuten', fr: 'Interpréter ce résultat avec prudence'
-        };
         const link = document.getElementById('mental-age-guide-link');
         const label = document.getElementById('mental-age-guide-label');
         const note = document.getElementById('result-boundary-note');
@@ -156,16 +146,8 @@ class BrainScanApp {
             link.href = `/portal/blog/${lang}/mental-age-test-brain-quiz-guide.html?surface=mental_age_result_guide`;
             link.onclick = () => this.trackEvent('mental_age_guide_click', { surface: 'result_related', guide_locale: lang });
         }
-        if (label) label.textContent = labels[lang] || labels.en;
-        if (note) {
-            const notes = {
-                ko: '오락용 결과이며 임상적 정신연령·IQ·뇌 연령 평가가 아닙니다.',
-                zh: '本结果仅供娱乐，不是临床心理年龄、智商或脑龄评估。',
-                pt: 'Resultado recreativo: não é uma avaliação clínica de idade mental, QI ou idade cerebral.',
-                es: 'Resultado recreativo: no es una evaluación clínica de edad mental, CI o edad cerebral.'
-            };
-            note.textContent = notes[lang] || 'Entertainment result: this is not a clinical mental-age, IQ, or brain-age assessment.';
-        }
+        if (label) label.textContent = i18n.t('result.guide_label');
+        if (note) note.textContent = i18n.t('result.boundary_note');
     }
 
     // ========== FLOW CONTROL ==========
@@ -177,18 +159,17 @@ class BrainScanApp {
         });
         this.trackEvent('quiz_start', {
             event_category: 'mental_age',
-            content_type: 'brain_scan',
+            content_type: 'brain_challenge',
             cta_surface: ctaSurface
         });
         this.trackEvent('test_start', {
-            content_type: 'brain_scan',
+            content_type: 'brain_challenge',
             event_category: 'engagement',
             cta_surface: ctaSurface
         });
         this.currentChallenge = 0;
         this.scores = [];
-        this.mentalAge = null;
-        this.category = null;
+        this.challengeScore = null;
         this.resultViewTracked = false;
         this._clearTimers();
         this.showScreen('challenge-screen');
@@ -198,8 +179,7 @@ class BrainScanApp {
     resetTest() {
         this.currentChallenge = 0;
         this.scores = [];
-        this.mentalAge = null;
-        this.category = null;
+        this.challengeScore = null;
         this._clearTimers();
         this.showScreen('intro-screen');
     }
@@ -1063,35 +1043,15 @@ class BrainScanApp {
     }
 
     calculateResult() {
-        // Composite score = average of 7 challenge scores
-        const composite = this.scores.reduce((a, b) => a + b, 0) / this.scores.length;
-
-        // Map to mental age
-        if (composite <= 20) {
-            this.mentalAge = Math.round(5 + (composite / 20) * 7); // 5-12
-            this.category = 'child';
-        } else if (composite <= 40) {
-            this.mentalAge = Math.round(13 + ((composite - 20) / 20) * 6); // 13-19
-            this.category = 'teenager';
-        } else if (composite <= 60) {
-            this.mentalAge = Math.round(20 + ((composite - 40) / 20) * 14); // 20-34
-            this.category = 'youngAdult';
-        } else if (composite <= 80) {
-            this.mentalAge = Math.round(35 + ((composite - 60) / 20) * 20); // 35-55
-            this.category = 'matureMind';
-        } else {
-            this.mentalAge = Math.round(56 + ((composite - 80) / 20) * 24); // 56-80
-            this.category = 'elderSage';
-        }
+        // Transparent composite: arithmetic mean of the seven visible challenge scores.
+        this.challengeScore = Math.round(this.scores.reduce((a, b) => a + b, 0) / this.scores.length);
 
         // GA4
         if (typeof gtag !== 'undefined') {
             gtag('event', 'test_complete', {
                 app_name: 'mental-age',
                 event_category: 'engagement',
-                mental_age: this.mentalAge,
-                category: this.category,
-                composite_score: Math.round(composite)
+                challenge_score: this.challengeScore
             });
         }
 
@@ -1102,24 +1062,17 @@ class BrainScanApp {
     }
 
     displayResult() {
-        const cat = this.category;
-        const catData = this._getCategoryData()[cat];
-
-        // Age display
-        const ageEl = document.getElementById('result-age');
-        if (ageEl) ageEl.textContent = this.mentalAge;
+        const scoreEl = document.getElementById('result-score');
+        if (scoreEl) scoreEl.textContent = this.challengeScore;
 
         const titleEl = document.getElementById('result-title');
-        if (titleEl) titleEl.textContent = catData.emoji + ' ' + i18n.t(catData.nameKey);
+        if (titleEl) titleEl.textContent = i18n.t('result.session_summary');
 
         const taglineEl = document.getElementById('result-tagline');
-        if (taglineEl) taglineEl.textContent = i18n.t(catData.taglineKey);
+        if (taglineEl) taglineEl.textContent = i18n.t('result.score_context').replace('{score}', this.challengeScore);
 
         const descEl = document.getElementById('result-description');
-        if (descEl) descEl.innerHTML = '<p>' + i18n.t(catData.descriptionKey) + '</p>';
-
-        // Percentile stat
-        this.displayPercentileStat();
+        if (descEl) descEl.innerHTML = '<p>' + i18n.t('result.description') + '</p>';
 
         // Radar chart
         this.drawRadarChart();
@@ -1134,8 +1087,8 @@ class BrainScanApp {
         if (!this.resultViewTracked) {
             this.resultViewTracked = true;
             const params = {
-                surface: 'result_screen', mental_age: this.mentalAge,
-                category: this.category, lang: document.documentElement.lang || 'en'
+                surface: 'result_screen', challenge_score: this.challengeScore,
+                lang: document.documentElement.lang || 'en'
             };
             this.trackEvent('result_view', params);
             this.trackEvent('mental_age_result_view', params);
@@ -1144,72 +1097,6 @@ class BrainScanApp {
 
     ensureResultAdLoaded() {
         // Auto Ads owns placement and paid-impression measurement.
-    }
-
-    _getCategoryData() {
-        return {
-            child: {
-                emoji: '🧒',
-                nameKey: 'category.child',
-                taglineKey: 'category.child_tagline',
-                descriptionKey: 'category.child_description',
-                range: '5-12'
-            },
-            teenager: {
-                emoji: '🌟',
-                nameKey: 'category.teenager',
-                taglineKey: 'category.teenager_tagline',
-                descriptionKey: 'category.teenager_description',
-                range: '13-19'
-            },
-            youngAdult: {
-                emoji: '🚀',
-                nameKey: 'category.youngAdult',
-                taglineKey: 'category.youngAdult_tagline',
-                descriptionKey: 'category.youngAdult_description',
-                range: '20-34'
-            },
-            matureMind: {
-                emoji: '🎯',
-                nameKey: 'category.matureMind',
-                taglineKey: 'category.matureMind_tagline',
-                descriptionKey: 'category.matureMind_description',
-                range: '35-55'
-            },
-            elderSage: {
-                emoji: '🦉',
-                nameKey: 'category.elderSage',
-                taglineKey: 'category.elderSage_tagline',
-                descriptionKey: 'category.elderSage_description',
-                range: '56-80'
-            }
-        };
-    }
-
-    // ========== PERCENTILE STAT ==========
-
-    displayPercentileStat() {
-        const percentileEl = document.getElementById('percentile-stat');
-        if (!percentileEl) return;
-
-        // Calculate percentile based on mental age distribution
-        // Simulate a normal distribution with mean 28, std 12
-        const age = this.mentalAge;
-        let percentile;
-
-        if (age <= 10) percentile = 5;
-        else if (age <= 15) percentile = 12;
-        else if (age <= 20) percentile = 22;
-        else if (age <= 25) percentile = 35;
-        else if (age <= 30) percentile = 48;
-        else if (age <= 35) percentile = 38;
-        else if (age <= 40) percentile = 28;
-        else if (age <= 50) percentile = 18;
-        else if (age <= 60) percentile = 10;
-        else percentile = 6;
-
-        const text = i18n.t('result.percentileStat').replace('{percent}', percentile);
-        percentileEl.innerHTML = text;
     }
 
     // ========== RADAR CHART ==========
@@ -1373,20 +1260,14 @@ class BrainScanApp {
     // ========== SHARING ==========
 
     shareTwitter() {
-        const catData = this._getCategoryData()[this.category];
-        const categoryName = i18n.t(catData.nameKey);
-        const tagline = i18n.t(catData.taglineKey);
-        const template = i18n.t('share.twitterText') || 'My mental age is {age}! I got {type} {emoji}. What is yours?';
+        const template = i18n.t('share.twitterText') || 'I scored {score}/100 across seven brain mini-games. Try the same challenge!';
         const text = template
-            .replace('{age}', this.mentalAge)
-            .replace('{type}', categoryName)
-            .replace('{emoji}', catData.emoji)
-            .replace('{tagline}', tagline);
+            .replace('{score}', this.challengeScore);
         const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.href)}`;
         window.open(url, '_blank', 'width=550,height=420');
 
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'twitter', mental_age: this.mentalAge });
+            gtag('event', 'share', { method: 'twitter', challenge_score: this.challengeScore });
         }
     }
 
@@ -1395,26 +1276,20 @@ class BrainScanApp {
         window.open(url, '_blank', 'width=550,height=420');
 
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'facebook', mental_age: this.mentalAge });
+            gtag('event', 'share', { method: 'facebook', challenge_score: this.challengeScore });
         }
     }
 
     shareCopy() {
-        const catData = this._getCategoryData()[this.category];
-        const categoryName = i18n.t(catData.nameKey);
-        const tagline = i18n.t(catData.taglineKey);
-        const template = i18n.t('share.copyText') || 'My mental age is {age}! I got {type} {emoji}. {url}';
+        const template = i18n.t('share.copyText') || 'I scored {score}/100 across seven brain mini-games. {url}';
         const text = template
-            .replace('{age}', this.mentalAge)
-            .replace('{type}', categoryName)
-            .replace('{emoji}', catData.emoji)
-            .replace('{tagline}', tagline)
+            .replace('{score}', this.challengeScore)
             .replace('{url}', window.location.href);
 
         navigator.clipboard.writeText(text).then(() => {
             alert(i18n.t('message.copy_success') || 'Copied!');
             if (typeof gtag !== 'undefined') {
-                gtag('event', 'share', { method: 'copy', mental_age: this.mentalAge });
+                gtag('event', 'share', { method: 'copy', challenge_score: this.challengeScore });
             }
         }).catch(() => {
             alert(i18n.t('message.copy_error') || 'Copy failed.');
@@ -1426,7 +1301,6 @@ class BrainScanApp {
         if (!canvas) return;
 
         const ctx = canvas.getContext('2d');
-        const catData = this._getCategoryData()[this.category];
         const w = canvas.width;
         const h = canvas.height;
 
@@ -1448,16 +1322,16 @@ class BrainScanApp {
         ctx.fillStyle = '#a0a0c0';
         ctx.font = '600 32px Arial, sans-serif';
         ctx.textAlign = 'center';
-        ctx.fillText(i18n.t('share.canvasSubtitle') || 'My Mental Age Is...', w / 2, 80);
+        ctx.fillText(i18n.t('share.canvasSubtitle') || 'My Seven-Challenge Score', w / 2, 80);
 
-        // Age number
+        // Transparent average score
         ctx.fillStyle = '#0891b2';
         ctx.font = 'bold 160px Arial, sans-serif';
-        ctx.fillText(String(this.mentalAge), w / 2, 260);
+        ctx.fillText(String(this.challengeScore), w / 2, 260);
 
         // Emoji
         ctx.font = '72px Arial, sans-serif';
-        ctx.fillText(catData.emoji, w / 2, 360);
+        ctx.fillText('🧠', w / 2, 360);
 
         // Category name
         ctx.fillStyle = '#ffffff';
@@ -1501,15 +1375,14 @@ class BrainScanApp {
 
         // Download
         const link = document.createElement('a');
-        link.download = `mental-age-${this.mentalAge}.png`;
+        link.download = `brain-challenge-score-${this.challengeScore}.png`;
         link.href = canvas.toDataURL('image/png');
         link.click();
 
         if (typeof gtag !== 'undefined') {
             gtag('event', 'download_image', {
                 event_category: 'engagement',
-                mental_age: this.mentalAge,
-                category: this.category
+                challenge_score: this.challengeScore
             });
         }
     }
@@ -1529,34 +1402,6 @@ class BrainScanApp {
             }
         }
         ctx.fillText(line.trim(), x, currentY);
-    }
-
-    // ========== AGE COUNTER ANIMATION ==========
-
-    startAgeCounterAnimation() {
-        const el = document.getElementById('age-counter');
-        if (!el) return;
-
-        const ages = [];
-        for (let i = 5; i <= 85; i += 5) ages.push(i);
-        let idx = 0;
-        let cycles = 0;
-        const maxCycles = 3;
-
-        const interval = setInterval(() => {
-            el.textContent = ages[idx];
-            idx++;
-            if (idx >= ages.length) {
-                idx = 0;
-                cycles++;
-                if (cycles >= maxCycles) {
-                    clearInterval(interval);
-                    el.textContent = '?';
-                    el.style.animation = 'pulse 1.5s ease-in-out infinite';
-                }
-            }
-        }, 80);
-        this._timers.push(interval);
     }
 
     // ========== THEME ==========
@@ -1600,5 +1445,5 @@ class BrainScanApp {
 // Start app
 let app;
 document.addEventListener('DOMContentLoaded', () => {
-    app = new BrainScanApp();
+    app = new BrainChallengeApp();
 });

@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "心理年龄测试",
+    "title": "心理年龄风格脑力挑战",
     "loading": "加载中...",
     "skipLink": "跳至主要内容"
   },
   "meta": {
-    "description": "通过7个互动认知小挑战测试你的真实心理年龄！记忆力、反应速度、模式识别、专注力等。分享你的大脑扫描结果！",
-    "keywords": "心理年龄测试, 大脑年龄测试, 认知测试, 记忆力测试, 反应速度测试, 大脑扫描",
-    "og_title": "心理年龄测试 - 7个大脑挑战 | DopaBrain",
-    "og_description": "完成7个认知小挑战，发现你的真实心理年龄！记忆网格、反应速度、模式识别等！",
-    "twitter_title": "心理年龄测试 - 7个大脑挑战",
-    "twitter_description": "完成7个认知小挑战，发现你的真实心理年龄！"
+    "description": "体验记忆、反应、图形、专注、词语、情绪和数字等7个小游戏，获得透明的平均分；仅供娱乐。",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "心理年龄风格脑力挑战 | DopaBrain",
+    "og_description": "体验记忆、反应、图形、专注、词语、情绪和数字等7个小游戏，获得透明的平均分；仅供娱乐。",
+    "twitter_title": "心理年龄风格脑力挑战",
+    "twitter_description": "体验记忆、反应、图形、专注、词语、情绪和数字等7个小游戏，获得透明的平均分；仅供娱乐。"
   },
   "intro": {
-    "title": "心理年龄测试",
+    "title": "心理年龄风格挑战",
     "subtitle": "7个认知小挑战",
-    "description": "完成7个大脑挑战，发现你的真实心理年龄。",
+    "description": "完成7个脑力小游戏并比较分类分数。",
     "description_2": "记忆力、反应速度、专注力、模式识别等多项测试！",
     "time_estimate": "用时：约3分钟",
-    "yourMentalAge": "你的心理年龄",
-    "resultPreview": "大多数人以为自己25岁...但大脑却说42岁！",
-    "socialProof": "已完成2,340+次大脑扫描"
+    "resultPreview": "7个小游戏，1个透明平均分。",
+    "privacyNote": "无需注册 · 结果保留在此设备"
   },
   "button": {
-    "start": "发现你的心理年龄",
+    "start": "开始脑力挑战",
     "retry": "重新测试",
     "submit": "提交",
     "share_download": "保存图片",
@@ -32,17 +31,21 @@
     "share_copy": "复制链接"
   },
   "analyzing": {
-    "title": "正在分析你的大脑数据...",
+    "title": "正在计算平均分...",
     "subtitle": "请稍等片刻"
   },
   "result": {
-    "age_label": "岁",
-    "brain_profile": "大脑档案",
     "score_breakdown": "分数分析",
     "share": "分享你的结果",
     "related_tests": "相关测试",
     "moreTests": "探索更多",
-    "percentileStat": "仅 <strong>{percent}%</strong> 拥有与你相同的心理年龄"
+    "score_label": "平均分",
+    "challenge_profile": "挑战概况",
+    "session_summary": "本次结果",
+    "score_context": "7个可见小游戏分数的平均值：{score}/100",
+    "description": "使用分类概况比较本次表现。这份娱乐游戏分数不衡量心理年龄、脑龄或智力。",
+    "boundary_note": "娱乐结果：平均分只反映这7个小游戏，不是心理年龄、智商或脑龄的临床评估。",
+    "guide_label": "如何安全解读结果"
   },
   "related": {
     "emotionalAge": "情感年龄",
@@ -123,32 +126,15 @@
     "good": "不错！",
     "keep_trying": "继续加油！"
   },
-  "category": {
-    "child": "童心未泯",
-    "child_tagline": "纯真好奇心与无限想象力！",
-    "child_description": "你的大脑以年轻的惊奇和自发性运作。你用新鲜的视角和创造性的解决方案来处理问题。虽然某些认知领域仍在发展中，但丰富的想象力是你强大的武器。",
-    "teenager": "少年精神",
-    "teenager_tagline": "敏捷反应，大胆思维！",
-    "teenager_description": "你的思维快速运转，敢于冒险。反应速度出色，不拘泥于传统思维。你的认知风格融合了活力与正在成长的分析能力。",
-    "youngAdult": "青年头脑",
-    "youngAdult_tagline": "敏锐思维，均衡思考！",
-    "youngAdult_description": "你的大脑正在全力运转。在记忆力、速度和推理方面都表现出色。这是快速思维与成熟判断力交汇的认知最佳状态。",
-    "matureMind": "成熟之心",
-    "matureMind_tagline": "智慧与经验的相遇！",
-    "matureMind_description": "你的认知档案体现了深度处理和仔细分析。在模式识别和情商方面表现突出。你的大脑优先考虑准确性和理解力而非纯粹的速度。",
-    "elderSage": "长者智慧",
-    "elderSage_tagline": "每个思考都蕴含深厚智慧！",
-    "elderSage_description": "你的心灵通过多层智慧和反思来处理世界。情绪判读能力和模式识别出类拔萃。你的认知优势在于理解的深度。"
-  },
   "message": {
     "copy_success": "链接已复制！",
     "copy_error": "链接复制失败。"
   },
   "share": {
-    "twitterText": "大脑扫描结果：我的心理年龄是{age}岁！{emoji} {type} - {tagline} 你呢？",
-    "copyText": "大脑扫描结果：我的心理年龄是{age}岁！{emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "我的心理年龄是...",
-    "canvasTitle": "心理年龄测试"
+    "twitterText": "我在7个脑力小游戏中的平均分是{score}/100。来试试同样的挑战吧！",
+    "copyText": "我在7个脑力小游戏中的平均分是{score}/100。{url}",
+    "canvasSubtitle": "我的7项挑战分数",
+    "canvasTitle": "心理年龄风格挑战"
   },
   "game": {
     "back": "DopaBrain 首页"

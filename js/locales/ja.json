@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "精神年齢テスト",
+    "title": "精神年齢スタイル脳チャレンジ",
     "loading": "読み込み中...",
     "skipLink": "メインコンテンツへスキップ"
   },
   "meta": {
-    "description": "7つの認知ミニチャレンジで本当の精神年齢を測定！記憶力、反応速度、パターン認識、集中力テスト。結果をシェアしよう！",
-    "keywords": "精神年齢テスト, 脳年齢テスト, 認知テスト, 記憶力テスト, 反応速度テスト, ブレインスキャン",
-    "og_title": "精神年齢テスト - 7つの脳チャレンジ | DopaBrain",
-    "og_description": "7つの認知ミニチャレンジで本当の精神年齢を測定！記憶グリッド、反応速度、パターン認識など！",
-    "twitter_title": "精神年齢テスト - 7つの脳チャレンジ",
-    "twitter_description": "7つの認知ミニチャレンジで本当の精神年齢を測定！"
+    "description": "記憶、反応、パターン、集中、言葉、感情、数字の7つのミニゲームに挑戦。透明な平均スコアを表示します。娯楽用です。",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "精神年齢スタイル脳チャレンジ | DopaBrain",
+    "og_description": "記憶、反応、パターン、集中、言葉、感情、数字の7つのミニゲームに挑戦。透明な平均スコアを表示します。娯楽用です。",
+    "twitter_title": "精神年齢スタイル脳チャレンジ",
+    "twitter_description": "記憶、反応、パターン、集中、言葉、感情、数字の7つのミニゲームに挑戦。透明な平均スコアを表示します。娯楽用です。"
   },
   "intro": {
-    "title": "精神年齢テスト",
+    "title": "精神年齢スタイル・チャレンジ",
     "subtitle": "7つの認知ミニチャレンジ",
-    "description": "7つの脳チャレンジを完了して、本当の精神年齢を発見しましょう。",
+    "description": "7つの脳ミニゲームを完了し、カテゴリ別スコアを比べます。",
     "description_2": "記憶力、反応速度、集中力、パターン認識など多彩なテスト！",
     "time_estimate": "所要時間：約3分",
-    "yourMentalAge": "あなたの精神年齢",
-    "resultPreview": "ほとんどの人は25歳だと思っていますが...脳は42歳と言っています！",
-    "socialProof": "2,340回以上のブレインスキャン完了"
+    "resultPreview": "7つのミニゲーム、1つの透明な平均スコア。",
+    "privacyNote": "登録不要 · 結果はこの端末内に残ります"
   },
   "button": {
-    "start": "精神年齢を発見する",
+    "start": "脳チャレンジを始める",
     "retry": "もう一度",
     "submit": "送信",
     "share_download": "画像を保存",
@@ -32,17 +31,21 @@
     "share_copy": "リンクをコピー"
   },
   "analyzing": {
-    "title": "脳データを分析中...",
+    "title": "平均スコアを計算中...",
     "subtitle": "少々お待ちください"
   },
   "result": {
-    "age_label": "歳",
-    "brain_profile": "脳プロフィール",
     "score_breakdown": "スコア分析",
     "share": "結果をシェアする",
     "related_tests": "関連テスト",
     "moreTests": "もっと見る",
-    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じ精神年齢です"
+    "score_label": "平均スコア",
+    "challenge_profile": "チャレンジプロフィール",
+    "session_summary": "今回の結果",
+    "score_context": "表示された7つのミニゲームスコアの平均：{score}/100",
+    "description": "カテゴリプロフィールで今回の結果を比べられます。この娯楽スコアは精神年齢、脳年齢、知能を測るものではありません。",
+    "boundary_note": "娯楽用の結果です。平均は7つのミニゲームだけを反映し、精神年齢、IQ、脳年齢の臨床評価ではありません。",
+    "guide_label": "結果を安全に読み解く方法"
   },
   "related": {
     "emotionalAge": "感情年齢",
@@ -123,32 +126,15 @@
     "good": "いいね！",
     "keep_trying": "がんばって！"
   },
-  "category": {
-    "child": "子どもの心",
-    "child_tagline": "純粋な好奇心と果てしない想像力！",
-    "child_description": "あなたの脳は若さの驚きと自発性で動いています。新鮮な視点と創造的な解決策で問題に取り組みます。一部の認知領域はまだ発達中ですが、豊かな想像力が強力な武器です。",
-    "teenager": "ティーンスピリット",
-    "teenager_tagline": "素早い反射神経、大胆な思考！",
-    "teenager_description": "心が素早く動き、リスクを恐れません。反応速度が優れており、型にはまった思考を拒否します。エネルギーと成長する分析力が融合した認知スタイルです。",
-    "youngAdult": "ヤングアダルト",
-    "youngAdult_tagline": "鋭い精神、バランスの取れた思考！",
-    "youngAdult_description": "脳が全力で稼働中です。記憶力、速度、推論能力のすべてで優れた成績を示しています。素早い思考と成熟した判断力が出会う認知的最適点です。",
-    "matureMind": "成熟した精神",
-    "matureMind_tagline": "知恵と経験の出会い！",
-    "matureMind_description": "深い処理と慎重な分析を示す認知プロフィールです。パターン認識と感情知性に優れています。単純な速度より正確性と理解を優先する脳です。",
-    "elderSage": "賢者の知恵",
-    "elderSage_tagline": "すべての思考に深い知恵！",
-    "elderSage_description": "世界を知恵と省察の何層もの視点で処理する心です。感情判読能力とパターン認識に卓越しています。理解の深さに認知的強みが輝きます。"
-  },
   "message": {
     "copy_success": "リンクがコピーされました！",
     "copy_error": "リンクのコピーに失敗しました。"
   },
   "share": {
-    "twitterText": "ブレインスキャンの結果、私の精神年齢は{age}歳！{emoji} {type} - {tagline} あなたは？",
-    "copyText": "ブレインスキャンの結果、私の精神年齢は{age}歳！{emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "私の精神年齢は...",
-    "canvasTitle": "精神年齢テスト"
+    "twitterText": "7つの脳ミニゲームの平均は{score}/100でした。同じチャレンジを試してみてください！",
+    "copyText": "7つの脳ミニゲームの平均は{score}/100でした。{url}",
+    "canvasSubtitle": "7チャレンジのスコア",
+    "canvasTitle": "精神年齢スタイル・チャレンジ"
   },
   "game": {
     "back": "DopaBrain ホーム"

@@ -1,7 +1,7 @@
 {
-  "name": "Mental Age Test",
-  "short_name": "Mental Age",
-  "description": "What is your real mental age? Discover with 15 fun questions!",
+  "name": "Mental Age-Style Brain Challenge",
+  "short_name": "Brain Challenge",
+  "description": "Try seven entertainment mini-games and get a transparent average score with a category breakdown. Not a clinical mental-age or brain-age assessment.",
   "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",

@@ -76,7 +76,7 @@
 [data-theme="light"] ::-webkit-scrollbar-thumb {
     background: rgba(0,0,0,0.15);
 }
-[data-theme="light"] .age-display {
+[data-theme="light"] .score-display {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -406,37 +406,6 @@ body {
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
-}
-
-/* Age Counter Animation */
-.age-counter-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.age-counter-number {
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 1;
-    background: linear-gradient(135deg, var(--accent-color), var(--primary-color), var(--primary-light));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-variant-numeric: tabular-nums;
-    min-width: 80px;
-    text-align: center;
-    display: inline-block;
-}
-
-.age-counter-label {
-    font-size: 12px;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin-top: 4px;
 }
 
 /* Result Preview Teaser */
@@ -1247,6 +1216,7 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: 999;
+    overflow: hidden;
 }
 
 .confetti {
@@ -1267,7 +1237,8 @@ body {
     margin-bottom: 32px;
 }
 
-.age-display {
+.score-display {
+    display: inline-block;
     font-size: 96px;
     font-weight: 900;
     line-height: 1;
@@ -1280,7 +1251,7 @@ body {
     text-shadow: none;
 }
 
-.age-label {
+.score-label {
     font-size: 16px;
     color: var(--text-secondary);
     margin-bottom: 12px;
@@ -1349,23 +1320,6 @@ body {
     color: var(--text-secondary);
     font-size: 13px;
     line-height: 1.55;
-}
-
-.percentile-stat {
-    text-align: center;
-    font-size: 14px;
-    color: var(--text-secondary);
-    margin: 16px 0 24px;
-    padding: 12px 16px;
-    background: var(--bg-card);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-}
-
-.percentile-stat strong {
-    color: var(--primary-color);
-    font-size: 18px;
-    font-weight: 700;
 }
 
 /* Scores Section */
@@ -1578,8 +1532,7 @@ body {
     html { font-size: 14px; }
     .intro-title { font-size: 24px; }
     .result-title { font-size: 24px; }
-    .age-display { font-size: 72px; }
-    .age-counter-number { font-size: 52px; }
+    .score-display { font-size: 72px; }
     .memory-grid { max-width: 240px; gap: 6px; }
     .memory-cell { min-width: 48px; min-height: 48px; }
     .reaction-area { height: 220px; }
@@ -1593,7 +1546,7 @@ body {
     .challenge-badge { padding: 6px 8px; font-size: 11px; }
     .intro-title { font-size: 20px; }
     .brain-emoji { font-size: 60px; }
-    .age-display { font-size: 60px; }
+    .score-display { font-size: 60px; }
     .memory-grid { max-width: 200px; }
 }
 

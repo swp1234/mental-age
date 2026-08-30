@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "Zihinsel Yas Testi",
+    "title": "Zihinsel yaş tarzı beyin mücadelesi",
     "loading": "Yukleniyor...",
     "skipLink": "Ana iceriye atla"
   },
   "meta": {
-    "description": "7 interaktif bilissel mini meydan okumayla gercek zihinsel yasini test et! Hafiza, reaksiyon hizi, oruntu tanima, odaklanma ve dahasi. Beyin tarama sonuclarini paylas!",
-    "keywords": "zihinsel yas testi, beyin yasi testi, bilissel test, hafiza testi, reaksiyon hizi testi, beyin tarasi",
-    "og_title": "Zihinsel Yas Testi - 7 Beyin Meydan Okumasi | DopaBrain",
-    "og_description": "7 bilissel mini meydan okumayi tamamla ve gercek zihinsel yasini kesfet! Hafiza izgarasi, reaksiyon hizi, oruntu tanima ve daha fazlasi.",
-    "twitter_title": "Zihinsel Yas Testi - 7 Beyin Meydan Okumasi",
-    "twitter_description": "7 bilissel mini meydan okumayi tamamla ve gercek zihinsel yasini kesfet!"
+    "description": "Hafıza, tepki, örüntü, odak, kelime, duygu ve sayı alanlarında 7 mini oyun deneyin. Şeffaf ortalama puan alın; yalnızca eğlence amaçlıdır.",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "Zihinsel yaş tarzı beyin mücadelesi | DopaBrain",
+    "og_description": "Hafıza, tepki, örüntü, odak, kelime, duygu ve sayı alanlarında 7 mini oyun deneyin. Şeffaf ortalama puan alın; yalnızca eğlence amaçlıdır.",
+    "twitter_title": "Zihinsel yaş tarzı beyin mücadelesi",
+    "twitter_description": "Hafıza, tepki, örüntü, odak, kelime, duygu ve sayı alanlarında 7 mini oyun deneyin. Şeffaf ortalama puan alın; yalnızca eğlence amaçlıdır."
   },
   "intro": {
-    "title": "Zihinsel Yas Testi",
+    "title": "Zihinsel yaş tarzı mücadele",
     "subtitle": "7 Bilissel Mini Meydan Okuma",
-    "description": "7 beyin meydan okumasini tamamlayarak gercek zihinsel yasini kesfet.",
+    "description": "7 beyin mini oyununu tamamlayın ve kategori puanlarını karşılaştırın.",
     "description_2": "Hafiza, hiz, odaklanma, oruntu tanima ve daha fazlasi!",
     "time_estimate": "Sure: yaklasik 3 dakika",
-    "yourMentalAge": "Zihinsel yasin",
-    "resultPreview": "Cogu kisi 25 yasinda oldugunu dusunuyor... ama beyinleri 42 diyor!",
-    "socialProof": "2.340+ beyin taramasi tamamlandi"
+    "resultPreview": "Yedi mini oyun, tek bir şeffaf ortalama puan.",
+    "privacyNote": "Kayıt yok · sonuçlar bu cihazda kalır"
   },
   "button": {
-    "start": "Zihinsel yasini kesfet",
+    "start": "Beyin mücadelesini başlat",
     "retry": "Tekrar Dene",
     "submit": "Gonder",
     "share_download": "Gorsel Indir",
@@ -32,17 +31,21 @@
     "share_copy": "Baglanti Kopyala"
   },
   "analyzing": {
-    "title": "Beyin verilerin analiz ediliyor...",
+    "title": "Ortalama puan hesaplanıyor...",
     "subtitle": "Lutfen bir an bekleyin"
   },
   "result": {
-    "age_label": "yasinda",
-    "brain_profile": "Beyin Profili",
     "score_breakdown": "Skor Analizi",
     "share": "Sonucunu Paylas",
     "related_tests": "Ilgili Testler",
     "moreTests": "Daha fazla keşfet",
-    "percentileStat": "Sadece <strong>{percent}%</strong>'i senin zihinsel yaşına sahip"
+    "score_label": "Ortalama puan",
+    "challenge_profile": "Mücadele profili",
+    "session_summary": "Oturum özeti",
+    "score_context": "Görünen yedi mini oyun puanının ortalaması: {score}/100",
+    "description": "Bu oturumu karşılaştırmak için kategori profilini kullanın. Eğlence puanı zihinsel yaşı, beyin yaşını veya zekâyı ölçmez.",
+    "boundary_note": "Eğlence sonucu: ortalama yalnızca bu yedi mini oyunu yansıtır ve klinik zihinsel yaş, IQ veya beyin yaşı değerlendirmesi değildir.",
+    "guide_label": "Bu sonucu güvenle yorumlama"
   },
   "related": {
     "emotionalAge": "Duygusal Yaş",
@@ -123,32 +126,15 @@
     "good": "Iyi!",
     "keep_trying": "Devam et!"
   },
-  "category": {
-    "child": "Cocuk Zihni",
-    "child_tagline": "Saf merak ve sinirsiz hayal gucu!",
-    "child_description": "Beynin gencligin saskinligi ve kendiligindenligiyle calisiyor. Sorunlara taze gozlerle ve yaratici cozumlerle yaklasiyorsun. Bazi bilissel alanlar hala gelismekte olsa da, hayal gucun guclu bir armagandir.",
-    "teenager": "Genc Ruhu",
-    "teenager_tagline": "Hizli refleksler, cesur dusunce!",
-    "teenager_description": "Zihnin hizli hareket ediyor ve risk aliyor. Iyi reaksiyon surelerine sahipsin ve kaliplarin disinda dusunmekten cekinmiyorsun. Bilissel tarzin enerjiyi gelisen analitik becerilerle harmanlyor.",
-    "youngAdult": "Genc Yetiskin",
-    "youngAdult_tagline": "Keskin zihin, dengeli dusunce!",
-    "youngAdult_description": "Beynin tam kapasiteyle calisiyor. Hafiza, hiz ve akil yurutmede guclu performans gosteriyorsun. Bu, hizli dusuncenin olgun yargiyla bulustu bilissel tatli noktadir.",
-    "matureMind": "Olgun Zihin",
-    "matureMind_tagline": "Bilgelik deneyimle bulusuyor!",
-    "matureMind_description": "Bilissel profilin derin isleme ve dikkatli analizi yansitiyor. Oruntu tanima ve duygusal zekada one cikiyorsun. Beynin ham hiz yerine dogruluk ve anlamayi onceliklendiriyor.",
-    "elderSage": "Bilge Yasl",
-    "elderSage_tagline": "Her dusuncede caglarin bilgeligi!",
-    "elderSage_description": "Zihnin dunyayi bilgelik ve dusunce katmanlari araciligiyla isliyor. Olagnustu duygu okuma ve oruntu tanima yeteneklerine sahipsin. Bilissel gucun anlama derinliginde yatiyor."
-  },
   "message": {
     "copy_success": "Baglanti kopyalandi!",
     "copy_error": "Baglanti kopyalanamadi."
   },
   "share": {
-    "twitterText": "Beyin taramaminin sonucu: zihinsel yasim {age}! {emoji} {type} - {tagline} Seninki?",
-    "copyText": "Beyin taramaminin sonucu: zihinsel yasim {age}! {emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "Zihinsel Yasim...",
-    "canvasTitle": "Zihinsel Yas Testi"
+    "twitterText": "Yedi beyin mini oyunundaki ortalamam {score}/100. Aynı mücadeleyi dene!",
+    "copyText": "Yedi beyin mini oyunundaki ortalamam {score}/100. {url}",
+    "canvasSubtitle": "Yedi mücadele puanım",
+    "canvasTitle": "Zihinsel yaş tarzı mücadele"
   },
   "game": {
     "back": "DopaBrain Ana Sayfa"

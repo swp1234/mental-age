@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "Test de Edad Mental",
+    "title": "Reto de estilo edad mental - 7 minijuegos",
     "loading": "Cargando...",
     "skipLink": "Saltar al contenido principal"
   },
   "meta": {
-    "description": "¡Descubre tu edad mental real con 7 mini-desafios cognitivos interactivos! Memoria, velocidad de reaccion, reconocimiento de patrones, concentracion y mas. ¡Comparte tus resultados!",
-    "keywords": "test de edad mental, test cerebral, test cognitivo, test de memoria, test de velocidad de reaccion, escaner cerebral",
-    "og_title": "Test de Edad Mental - 7 Desafios Cerebrales | DopaBrain",
-    "og_description": "Completa 7 mini-desafios cognitivos para descubrir tu verdadera edad mental. Memoria, velocidad de reaccion, patrones y mas.",
-    "twitter_title": "Test de Edad Mental - 7 Desafios Cerebrales",
-    "twitter_description": "Completa 7 mini-desafios cognitivos para descubrir tu verdadera edad mental."
+    "description": "Prueba 7 minijuegos de memoria, reacción, patrones, concentración, palabras, emociones y números. Obtén un promedio transparente; solo entretenimiento.",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "Reto de estilo edad mental - 7 minijuegos | DopaBrain",
+    "og_description": "Prueba 7 minijuegos de memoria, reacción, patrones, concentración, palabras, emociones y números. Obtén un promedio transparente; solo entretenimiento.",
+    "twitter_title": "Reto de estilo edad mental - 7 minijuegos",
+    "twitter_description": "Prueba 7 minijuegos de memoria, reacción, patrones, concentración, palabras, emociones y números. Obtén un promedio transparente; solo entretenimiento."
   },
   "intro": {
-    "title": "Test de Edad Mental",
+    "title": "Reto de estilo edad mental",
     "subtitle": "7 Mini-Desafios Cognitivos",
-    "description": "Completa 7 desafios cerebrales para descubrir tu edad mental real.",
+    "description": "Completa 7 minijuegos y compara tus puntuaciones por categoría.",
     "description_2": "Memoria, velocidad, concentracion, reconocimiento de patrones y mas!",
     "time_estimate": "Tiempo: aproximadamente 3 minutos",
-    "yourMentalAge": "Tu edad mental",
-    "resultPreview": "La mayoria cree tener 25... pero su cerebro dice 42!",
-    "socialProof": "2,340+ escaneres cerebrales completados"
+    "resultPreview": "Siete minijuegos, un promedio transparente.",
+    "privacyNote": "Sin registro · los resultados quedan en este dispositivo"
   },
   "button": {
-    "start": "Descubre tu edad mental",
+    "start": "Iniciar el reto cerebral",
     "retry": "Intentar de nuevo",
     "submit": "Enviar",
     "share_download": "Descargar Imagen",
@@ -32,17 +31,21 @@
     "share_copy": "Copiar Enlace"
   },
   "analyzing": {
-    "title": "Analizando tus datos cerebrales...",
+    "title": "Calculando tu puntuación media...",
     "subtitle": "Espera un momento, por favor"
   },
   "result": {
-    "age_label": "anos",
-    "brain_profile": "Perfil Cerebral",
     "score_breakdown": "Desglose de Puntuacion",
     "share": "Comparte tu Resultado",
     "related_tests": "Tests Relacionados",
     "moreTests": "Explorar más",
-    "percentileStat": "Solo el <strong>{percent}%</strong> comparten tu edad mental"
+    "score_label": "Puntuación media",
+    "challenge_profile": "Perfil del reto",
+    "session_summary": "Resumen de la sesión",
+    "score_context": "Promedio de siete puntuaciones visibles: {score}/100",
+    "description": "Usa el perfil de categorías para comparar esta sesión. La puntuación es un resultado de entretenimiento y no mide edad mental, edad cerebral ni inteligencia.",
+    "boundary_note": "Resultado recreativo: el promedio solo refleja estos siete minijuegos y no es una evaluación clínica de edad mental, CI o edad cerebral.",
+    "guide_label": "Cómo interpretar este resultado con cuidado"
   },
   "related": {
     "emotionalAge": "Edad Emocional",
@@ -123,32 +126,15 @@
     "good": "Bien!",
     "keep_trying": "Sigue intentando!"
   },
-  "category": {
-    "child": "Mente Infantil",
-    "child_tagline": "Curiosidad pura e imaginacion sin limites!",
-    "child_description": "Tu cerebro opera con el asombro y la espontaneidad de la juventud. Abordas los problemas con ojos frescos y soluciones creativas. Aunque algunas areas cognitivas aun estan en desarrollo, tu pensamiento imaginativo es un poderoso don.",
-    "teenager": "Espiritu Adolescente",
-    "teenager_tagline": "Reflejos rapidos, pensamiento audaz!",
-    "teenager_description": "Tu mente se mueve rapido y toma riesgos. Tienes buenos tiempos de reaccion y no temes pensar fuera de lo comun. Tu estilo cognitivo combina energia con habilidades analiticas en desarrollo.",
-    "youngAdult": "Joven Adulto",
-    "youngAdult_tagline": "Mente aguda, pensamiento equilibrado!",
-    "youngAdult_description": "Tu cerebro esta funcionando a toda maquina. Muestras un fuerte rendimiento en memoria, velocidad y razonamiento. Este es el punto optimo cognitivo donde el pensamiento rapido se encuentra con el juicio maduro.",
-    "matureMind": "Mente Madura",
-    "matureMind_tagline": "La sabiduria se encuentra con la experiencia!",
-    "matureMind_description": "Tu perfil cognitivo refleja un procesamiento profundo y un analisis cuidadoso. Sobresales en reconocimiento de patrones e inteligencia emocional. Tu cerebro prioriza la precision y la comprension sobre la velocidad pura.",
-    "elderSage": "Sabio Mayor",
-    "elderSage_tagline": "La sabiduria de las edades en cada pensamiento!",
-    "elderSage_description": "Tu mente procesa el mundo a traves de capas de sabiduria y reflexion. Tienes una capacidad excepcional de lectura emocional y reconocimiento de patrones. Tu fortaleza cognitiva radica en la profundidad de comprension."
-  },
   "message": {
     "copy_success": "Enlace copiado!",
     "copy_error": "Error al copiar el enlace."
   },
   "share": {
-    "twitterText": "Resultado del escaner cerebral: mi edad mental es {age}! {emoji} {type} - {tagline} Y la tuya?",
-    "copyText": "Resultado del escaner cerebral: mi edad mental es {age}! {emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "Mi Edad Mental Es...",
-    "canvasTitle": "Test de Edad Mental"
+    "twitterText": "Mi promedio en siete minijuegos cerebrales fue {score}/100. ¡Prueba el mismo reto!",
+    "copyText": "Mi promedio en siete minijuegos cerebrales fue {score}/100. {url}",
+    "canvasSubtitle": "Mi puntuación de siete retos",
+    "canvasTitle": "Reto de estilo edad mental"
   },
   "game": {
     "back": "DopaBrain Inicio"

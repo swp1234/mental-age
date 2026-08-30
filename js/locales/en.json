@@ -1,29 +1,28 @@
 {
   "app": {
-    "title": "Mental Age Test",
+    "title": "Mental Age-Style Brain Challenge",
     "loading": "Loading...",
     "skipLink": "Skip to main content"
   },
   "meta": {
-    "description": "Test your real mental age with 7 interactive cognitive mini-challenges! Memory, reaction speed, pattern recognition, focus and more. Share your brain scan results!",
-    "keywords": "mental age test, brain age test, cognitive test, memory test, reaction speed test, brain scan",
-    "og_title": "Mental Age Test - 7 Brain Challenges | DopaBrain",
-    "og_description": "Complete 7 cognitive mini-challenges to discover your true mental age! Memory grid, reaction speed, pattern recognition and more.",
-    "twitter_title": "Mental Age Test - 7 Brain Challenges",
-    "twitter_description": "Complete 7 cognitive mini-challenges to discover your true mental age!"
+    "description": "Try 7 mini-games for memory, reaction, patterns, focus, words, emotions, and numbers. Get a transparent average score; entertainment only.",
+    "keywords": "mental age style game, brain mini games, memory game, reaction game, pattern game",
+    "og_title": "Mental Age-Style Brain Challenge | DopaBrain",
+    "og_description": "Try 7 mini-games for memory, reaction, patterns, focus, words, emotions, and numbers. Get a transparent average score; entertainment only.",
+    "twitter_title": "Mental Age-Style Brain Challenge",
+    "twitter_description": "Try 7 mini-games for memory, reaction, patterns, focus, words, emotions, and numbers. Get a transparent average score; entertainment only."
   },
   "intro": {
-    "title": "Mental Age Test",
+    "title": "Mental Age-Style Challenge",
     "subtitle": "7 Cognitive Mini-Challenges",
-    "description": "Complete 7 brain challenges to discover your real mental age.",
+    "description": "Complete 7 brain mini-games and compare your category scores.",
     "description_2": "Memory, speed, focus, pattern recognition and more!",
     "time_estimate": "Takes about 3 minutes",
-    "yourMentalAge": "Your Mental Age",
-    "resultPreview": "Most people think they're 25... but their brain says 42!",
-    "socialProof": "2,340+ brain scans completed"
+    "resultPreview": "Seven mini-games, one transparent average score.",
+    "privacyNote": "No signup · results stay on this device"
   },
   "button": {
-    "start": "Discover Your Mental Age",
+    "start": "Start the Brain Challenge",
     "retry": "Try Again",
     "submit": "Submit",
     "share_download": "Download Image",
@@ -32,17 +31,21 @@
     "share_copy": "Copy Link"
   },
   "analyzing": {
-    "title": "Analyzing your brain data...",
+    "title": "Calculating your average score...",
     "subtitle": "Please wait a moment"
   },
   "result": {
-    "age_label": "years old",
-    "brain_profile": "Brain Profile",
     "score_breakdown": "Score Breakdown",
     "share": "Share Your Result",
     "related_tests": "Related Tests",
     "moreTests": "Explore More",
-    "percentileStat": "Only <strong>{percent}%</strong> share your mental age"
+    "score_label": "Average Score",
+    "challenge_profile": "Challenge Profile",
+    "session_summary": "Your Session Summary",
+    "score_context": "Average of seven visible mini-game scores: {score}/100",
+    "description": "Use the category profile to compare this session. The score is an entertainment game result and does not measure mental age, brain age, or intelligence.",
+    "boundary_note": "Entertainment result: the average reflects only these seven mini-games and is not a clinical mental-age, IQ, or brain-age assessment.",
+    "guide_label": "How to interpret this result safely"
   },
   "related": {
     "emotionalAge": "Emotional Age",
@@ -123,32 +126,15 @@
     "good": "Good!",
     "keep_trying": "Keep going!"
   },
-  "category": {
-    "child": "Child Mind",
-    "child_tagline": "Pure curiosity and boundless imagination!",
-    "child_description": "Your brain operates with the wonder and spontaneity of youth. You approach problems with fresh eyes and creative solutions. While some cognitive areas are still developing, your imaginative thinking is a powerful gift.",
-    "teenager": "Teen Spirit",
-    "teenager_tagline": "Quick reflexes, bold thinking!",
-    "teenager_description": "Your mind moves fast and takes risks. You have strong reaction times and aren't afraid to think outside the box. Your cognitive style blends energy with emerging analytical skills.",
-    "youngAdult": "Young Adult",
-    "youngAdult_tagline": "Sharp mind, balanced thinking!",
-    "youngAdult_description": "Your brain is firing on all cylinders. You show strong performance across memory, speed, and reasoning. This is the cognitive sweet spot where quick thinking meets mature judgment.",
-    "matureMind": "Mature Mind",
-    "matureMind_tagline": "Wisdom meets experience!",
-    "matureMind_description": "Your cognitive profile reflects deep processing and careful analysis. You excel at pattern recognition and emotional intelligence. Your brain prioritizes accuracy and understanding over raw speed.",
-    "elderSage": "Elder Sage",
-    "elderSage_tagline": "The wisdom of ages in every thought!",
-    "elderSage_description": "Your mind processes the world through layers of wisdom and reflection. You have exceptional emotional reading ability and pattern recognition. Your cognitive strength lies in depth of understanding."
-  },
   "message": {
     "copy_success": "Link copied!",
     "copy_error": "Failed to copy link."
   },
   "share": {
-    "twitterText": "I just took the Brain Scan and my mental age is {age}! {emoji} {type} - {tagline} What's yours?",
-    "copyText": "I just took the Brain Scan and my mental age is {age}! {emoji} {type} - {tagline} {url}",
-    "canvasSubtitle": "My Mental Age Is...",
-    "canvasTitle": "Mental Age Test"
+    "twitterText": "I averaged {score}/100 across seven brain mini-games. Try the same challenge!",
+    "copyText": "I averaged {score}/100 across seven brain mini-games. {url}",
+    "canvasSubtitle": "My Seven-Challenge Score",
+    "canvasTitle": "Mental Age-Style Challenge"
   },
   "game": {
     "back": "DopaBrain Home"
