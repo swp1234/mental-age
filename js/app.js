@@ -40,6 +40,7 @@ class BrainChallengeApp {
         this.setupEventListeners();
         this.setupServiceWorker();
         this.configureGuideLink();
+        this.configureRelatedLinks();
         this.tryAutoStart();
     }
 
@@ -128,6 +129,7 @@ class BrainChallengeApp {
     async changeLang(lang) {
         await i18n.setLanguage(lang);
         this.configureGuideLink();
+        this.configureRelatedLinks();
         document.getElementById('lang-menu').classList.add('hidden');
         // Re-render result if on result screen
         if (this.challengeScore !== null) {
@@ -145,11 +147,47 @@ class BrainChallengeApp {
         const label = document.getElementById('mental-age-guide-label');
         const note = document.getElementById('result-boundary-note');
         if (link) {
-            link.href = `/portal/blog/${guideLang}/mental-age-test-brain-quiz-guide.html?surface=mental_age_result_guide`;
-            link.onclick = () => this.trackEvent('mental_age_guide_click', { surface: 'result_related', guide_locale: guideLang, app_locale: lang });
+            link.href = `/portal/blog/${guideLang}/mental-age-test-brain-quiz-guide.html?surface=mental_age_result_guide&source=mental_age_result`;
+            link.onclick = () => {
+                this.trackEvent('mental_age_guide_click', { surface: 'result_related', guide_locale: guideLang, app_locale: lang });
+                this.trackEvent('content_cta_click', {
+                    link_id: 'mental_age_guide_click',
+                    link_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 40),
+                    target_url: link.href || '',
+                    source_page: 'mental_age_result'
+                });
+            };
         }
         if (label) label.textContent = i18n.t('result.guide_label');
         if (note) note.textContent = i18n.t('result.boundary_note');
+    }
+
+    configureRelatedLinks() {
+        let lang = document.documentElement.lang || this.getUrlParam('lang') || 'en';
+        const supported = ['ko', 'en', 'zh', 'hi', 'ru', 'ja', 'es', 'pt', 'id', 'tr', 'de', 'fr'];
+        if (!supported.includes(lang)) lang = 'en';
+
+        document.querySelectorAll('.related-tests a.related-card').forEach(link => {
+            if (link.id === 'mental-age-guide-link') return;
+            try {
+                const u = new URL(link.getAttribute('href'), window.location.origin);
+                u.searchParams.set('lang', lang);
+                u.searchParams.set('source', 'mental_age_result');
+                link.href = u.pathname + u.search;
+            } catch (_) {}
+
+            if (!link.dataset.trackedCta) {
+                link.dataset.trackedCta = 'true';
+                link.addEventListener('click', () => {
+                    this.trackEvent('content_cta_click', {
+                        link_id: 'mental_age_related_' + (link.getAttribute('href') || '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 30),
+                        link_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 40),
+                        target_url: link.href || '',
+                        source_page: 'mental_age_result'
+                    });
+                });
+            }
+        });
     }
 
     // ========== FLOW CONTROL ==========
@@ -1086,6 +1124,7 @@ class BrainChallengeApp {
         this.createConfetti();
 
         this.ensureResultAdLoaded();
+        this.configureRelatedLinks();
         if (!this.resultViewTracked) {
             this.resultViewTracked = true;
             const params = {
