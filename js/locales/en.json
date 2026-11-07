@@ -138,5 +138,35 @@
   },
   "game": {
     "back": "DopaBrain Home"
+  },
+  "about": {
+    "summaryTitle": "About This Brain Challenge & Cognitive Dimensions",
+    "howItWorksHeading": "How the Challenge Works",
+    "howItWorksDesc": "This interactive session comprises seven timed cognitive mini-challenges testing distinct mental processing domains: visual memory, reaction speed, pattern matching, word recognition, focus under interference (Stroop effect), emotional perception, and rapid number sequencing. Scores reflect an arithmetic mean across all completed rounds.",
+    "boundary": "Recreational Boundary: This game is an entertainment challenge. It does not measure biological brain age, clinical neurological status, or standardized IQ.",
+    "domainsHeading": "7 Cognitive Processing Domains",
+    "d1Title": "1. Memory:",
+    "d1Desc": "Short-term visual recall and spatial pattern retention.",
+    "d2Title": "2. Speed:",
+    "d2Desc": "Sensorimotor reaction latency and psychomotor alertness.",
+    "d3Title": "3. Pattern:",
+    "d3Desc": "Inductive reasoning and visual symmetry discrimination.",
+    "d4Title": "4. Words:",
+    "d4Desc": "Lexical access speed and verbal fluency retrieval.",
+    "d5Title": "5. Focus:",
+    "d5Desc": "Inhibitory control against cognitive interference (Stroop effect).",
+    "d6Title": "6. Emotion:",
+    "d6Desc": "Micro-expression decoding and emotional cue identification.",
+    "d7Title": "7. Numbers:",
+    "d7Desc": "Working memory manipulation and rapid numerical ordering.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "Q: Does this challenge measure chronological or biological mental age?",
+    "faq1A": "A: No. The score is a recreational performance metric summarizing mini-game speed and accuracy. It does not determine clinical brain health or formal IQ.",
+    "faq2Q": "Q: Can cognitive performance vary throughout the day?",
+    "faq2A": "A: Yes. Arousal levels, sleep quality, circadian rhythms, caffeine, and sensory fatigue significantly influence reaction speed and working memory bandwidth.",
+    "faq3Q": "Q: Are my test answers or scores saved?",
+    "faq3A": "A: All mini-game evaluations occur entirely within your local browser runtime. No individual choices or scores are ever transmitted to external servers.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Cognitive Sciences Team"
   }
 }

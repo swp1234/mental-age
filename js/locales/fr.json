@@ -138,5 +138,35 @@
   },
   "game": {
     "back": "DopaBrain Accueil"
+  },
+  "about": {
+    "summaryTitle": "Guide du Défi Cérébral: 7 Domaines & FAQ",
+    "howItWorksHeading": "Déroulement du Défi",
+    "howItWorksDesc": "Sept mini-épreuves chronométrées évaluent la mémoire visuelle, la vitesse de réaction, la reconnaissance de motifs, le vocabulaire, la concentration (effet Stroop), la perception émotionnelle et la suite numérique.",
+    "boundary": "Cadre récréatif: Ce jeu est un entraînement cérébral ludique sans valeur diagnostique médicale ou de QI.",
+    "domainsHeading": "7 Domaines de Traitement Cognitif",
+    "d1Title": "1. Mémoire:",
+    "d1Desc": "Rappel visuel à court terme et mémoire spatiale.",
+    "d2Title": "2. Vitesse:",
+    "d2Desc": "Temps de réaction sensorimoteur et vigilance psychomotrice.",
+    "d3Title": "3. Motifs:",
+    "d3Desc": "Raisonnement inductif et détection de symétries.",
+    "d4Title": "4. Mots:",
+    "d4Desc": "Vitesse d'accès au lexique et fluidité verbale.",
+    "d5Title": "5. Attention:",
+    "d5Desc": "Contrôle inhibiteur contre les interférences cognitives (Stroop).",
+    "d6Title": "6. Émotion:",
+    "d6Desc": "Décodage des micro-expressions faciales.",
+    "d7Title": "7. Nombres:",
+    "d7Desc": "Manipulation de la mémoire de travail et séquençage numérique.",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Q: Ce test calcule-t-il l'âge cérébral biologique?",
+    "faq1A": "A: Non, il s'agit d'un score ludique de performance aux mini-jeux, sans visée médicale.",
+    "faq2Q": "Q: La performance varie-t-elle au cours de la journée?",
+    "faq2A": "A: Oui, le sommeil, les rythmes circadiens et la fatigue modifient la réactivité.",
+    "faq3Q": "Q: Mes réponses sont-elles enregistrées?",
+    "faq3A": "A: Non, toutes les opérations restent strictement locales dans votre navigateur.",
+    "reviewDate": "Validation éditoriale: novembre 2026",
+    "reviewTeam": "Équipe Sciences Cognitives DopaBrain"
   }
 }

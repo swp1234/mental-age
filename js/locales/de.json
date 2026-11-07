@@ -138,5 +138,35 @@
   },
   "game": {
     "back": "DopaBrain Startseite"
+  },
+  "about": {
+    "summaryTitle": "Gehirn-Challenge-Leitfaden: 7 Dimensionen & FAQ",
+    "howItWorksHeading": "Ablauf der Challenge",
+    "howItWorksDesc": "Sieben zeitbasierte kognitive Minispiele testen visuelles Gedächtnis, Reaktionszeit, Mustererkennung, Wortabruf, Aufmerksamkeitsfokus (Stroop-Effekt), Emotionswahrnehmung und Zahlenfolgen.",
+    "boundary": "Reine Unterhaltung: Dieser Test dient dem spielerischen Gehirntraining und liefert keine klinische Diagnose oder IQ-Werte.",
+    "domainsHeading": "7 Kognitive Verarbeitungsbereiche",
+    "d1Title": "1. Gedächtnis:",
+    "d1Desc": "Visuelles Kurzzeitgedächtnis und räumliche Mustererkennung.",
+    "d2Title": "2. Geschwindigkeit:",
+    "d2Desc": "Sensomotorische Reaktionszeit und geistige Wachheit.",
+    "d3Title": "3. Muster:",
+    "d3Desc": "Induktive Logik und Symmetrieunterscheidung.",
+    "d4Title": "4. Wörter:",
+    "d4Desc": "Lexikalischer Abruf und verbale Flüssigkeit.",
+    "d5Title": "5. Fokus:",
+    "d5Desc": "Inhibitorische Kontrolle gegen kognitive Störreize (Stroop).",
+    "d6Title": "6. Emotion:",
+    "d6Desc": "Erkennung von Mimik und sozialen Gefühlssignalen.",
+    "d7Title": "7. Zahlen:",
+    "d7Desc": "Arbeitsgedächtniskapazität und schnelle Zahlenreihung.",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Q: Misst der Test das reale biologische Gehirnalter?",
+    "faq1A": "A: Nein. Es ist ein spielerischer Leistungswert ohne medizinische oder diagnostische Aussagekraft.",
+    "faq2Q": "Q: Schwankt die kognitive Leistung über den Tag?",
+    "faq2A": "A: Ja. Schlaf, Biorhythmus und Ermüdung beeinflussen die Reaktionszeit messbar.",
+    "faq3Q": "Q: Werden Antworten auf Servern gespeichert?",
+    "faq3A": "A: Niemals. Die Berechnung erfolgt vollständig lokal im Webbrowser.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Kognitionswissenschaftliches Team"
   }
 }

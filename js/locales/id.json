@@ -138,5 +138,35 @@
   },
   "game": {
     "back": "DopaBrain Beranda"
+  },
+  "about": {
+    "summaryTitle": "Panduan Tantangan Otak: 7 Dimensi Kognitif & FAQ",
+    "howItWorksHeading": "Cara Kerja Tantangan",
+    "howItWorksDesc": "Tujuh permainan mini menguji memori visual, kecepatan reaksi motorik, pengenalan pola, kefasihan kata, fokus inhibisi (efek Stroop), persepsi emosi, dan manipulasi urutan angka.",
+    "boundary": "Batasan Rekreasi: Permainan ini bertujuan hiburan dan latihan otak, bukan pengukuran usia otak medis atau tes IQ formal.",
+    "domainsHeading": "7 Domain Pemrosesan Kognitif",
+    "d1Title": "1. Memori:",
+    "d1Desc": "Ingatan visual jangka pendek dan pola spasial.",
+    "d2Title": "2. Kecepatan:",
+    "d2Desc": "Latensi reaksi sensorimotor dan kesiagaan.",
+    "d3Title": "3. Pola:",
+    "d3Desc": "Penalaran induktif dan simetri visual.",
+    "d4Title": "4. Kata:",
+    "d4Desc": "Akses kosakata cepat dan kelancaran verbal.",
+    "d5Title": "5. Fokus:",
+    "d5Desc": "Kontrol hambatan terhadap gangguan kognitif (Stroop).",
+    "d6Title": "6. Emosi:",
+    "d6Desc": "Pengenalan ekspresi mikro wajah dan isyarat emosional.",
+    "d7Title": "7. Angka:",
+    "d7Desc": "Memori kerja dan pengurutan angka cepat.",
+    "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+    "faq1Q": "Q: Apakah ini mengukur usia biologis otak?",
+    "faq1A": "A: Tidak. Ini adalah metrik permainan rekreasi, bukan tes neurologis klinis.",
+    "faq2Q": "Q: Bisakah performa kognitif berubah-ubah?",
+    "faq2A": "A: Ya. Kualitas tidur, ritme sirkadian, dan kelelahan memengaruhi kecepatan reaksi.",
+    "faq3Q": "Q: Apakah jawaban saya disimpan di server?",
+    "faq3A": "A: Tidak pernah. Seluruh kalkulasi berjalan lokal di peramban.",
+    "reviewDate": "Tinjauan Editorial: November 2026",
+    "reviewTeam": "Tim Sains Kognitif DopaBrain"
   }
 }

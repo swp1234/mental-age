@@ -138,5 +138,35 @@
   },
   "game": {
     "back": "DopaBrain Inicio"
+  },
+  "about": {
+    "summaryTitle": "Guía del Desafío Cerebral: 7 Dimensiones y FAQ",
+    "howItWorksHeading": "Cómo Funciona el Desafío",
+    "howItWorksDesc": "Sesión interactiva compuesta por 7 minijuegos cronometrados que miden memoria visual, tiempo de reacción, reconocimiento de patrones, fluidez léxica, inhibición cognitiva (efecto Stroop), percepción emocional y orden numérico.",
+    "boundary": "Aviso recreativo: Este desafío tiene fines de entretenimiento lúdico y no mide edad cerebral biológica ni CI clínico.",
+    "domainsHeading": "7 Dominios de Procesamiento Cognitivo",
+    "d1Title": "1. Memoria:",
+    "d1Desc": "Retención visual a corto plazo y memoria espacial.",
+    "d2Title": "2. Velocidad:",
+    "d2Desc": "Latencia de reacción sensoriomotora y alerta psicomotriz.",
+    "d3Title": "3. Patrón:",
+    "d3Desc": "Razonamiento inductivo y discriminación visual.",
+    "d4Title": "4. Palabras:",
+    "d4Desc": "Acceso léxico rápido y fluidez verbal.",
+    "d5Title": "5. Enfoque:",
+    "d5Desc": "Control inhibitorio frente a interferencias cognitivas.",
+    "d6Title": "6. Emoción:",
+    "d6Desc": "Decodificación de microexpresiones faciales.",
+    "d7Title": "7. Números:",
+    "d7Desc": "Manipulación de memoria de trabajo y secuenciación numérica.",
+    "faqTitle": "Preguntas Frecuentes (FAQ)",
+    "faq1Q": "Q: ¿Mide la edad mental biológica?",
+    "faq1A": "A: No. Es una métrica recreativa sobre el desempeño en los minijuegos, sin validez clínica.",
+    "faq2Q": "Q: ¿Puede variar el rendimiento según la hora del día?",
+    "faq2A": "A: Sí. El descanso, los ritmos circadianos y la fatiga influyen notablemente en la memoria de trabajo.",
+    "faq3Q": "Q: ¿Se almacenan mis respuestas?",
+    "faq3A": "A: Nunca. Todo se procesa exclusivamente dentro de su navegador.",
+    "reviewDate": "Revisión editorial: noviembre de 2026",
+    "reviewTeam": "Equipo de Ciencias Cognitivas DopaBrain"
   }
 }

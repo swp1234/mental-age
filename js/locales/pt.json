@@ -138,5 +138,35 @@
   },
   "game": {
     "back": "DopaBrain Inicio"
+  },
+  "about": {
+    "summaryTitle": "Guia do Desafio Cerebral: 7 Dimensões e FAQ",
+    "howItWorksHeading": "Como Funciona o Desafio",
+    "howItWorksDesc": "Sete minidesafios cronometrados que exploram memória visual, velocidade motora, detecção de padrões, fluência verbal, controle inibitório (efeito Stroop), percepção afetiva e ordenamento numérico.",
+    "boundary": "Aviso lúdico: Trata-se de um jogo recreativo que não avalia idade biológica cerebral ou QI padronizado.",
+    "domainsHeading": "7 Domínios de Processamento Cognitivo",
+    "d1Title": "1. Memória:",
+    "d1Desc": "Evocação visual de curto prazo e retenção espacial.",
+    "d2Title": "2. Velocidade:",
+    "d2Desc": "Tempo de reação sensorial e prontidão motora.",
+    "d3Title": "3. Padrão:",
+    "d3Desc": "Raciocínio indutivo e discriminação de simetrias.",
+    "d4Title": "4. Palavras:",
+    "d4Desc": "Rapidez de acesso lexical e fluência verbal.",
+    "d5Title": "5. Foco:",
+    "d5Desc": "Controle inibitório contra interferências (efeito Stroop).",
+    "d6Title": "6. Emoção:",
+    "d6Desc": "Decodificação de microexpressões e pistas emocionais.",
+    "d7Title": "7. Números:",
+    "d7Desc": "Memória operacional e rápida ordenação de números.",
+    "faqTitle": "Perguntas Frequentes (FAQ)",
+    "faq1Q": "Q: O teste mede a idade mental biológica?",
+    "faq1A": "A: Não. É uma pontuação de entretenimento baseada no desempenho dos jogos.",
+    "faq2Q": "Q: O rendimento varia conforme o horário?",
+    "faq2A": "A: Sim. Sono, estresse e ritmos circadianos alteram a capacidade de foco e velocidade.",
+    "faq3Q": "Q: Meus dados são salvos?",
+    "faq3A": "A: Jamais. Todo processamento ocorre localmente no dispositivo.",
+    "reviewDate": "Revisão editorial: novembro de 2026",
+    "reviewTeam": "Equipe de Ciências Cognitivas DopaBrain"
   }
 }

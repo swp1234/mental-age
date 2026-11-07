@@ -138,5 +138,35 @@
   },
   "game": {
     "back": "DopaBrain Ana Sayfa"
+  },
+  "about": {
+    "summaryTitle": "Beyin Egzersizi Rehberi: 7 Boyut & SSS",
+    "howItWorksHeading": "Nasıl Çalışır?",
+    "howItWorksDesc": "Görsel hafıza, tepki süresi, örüntü tanıma, kelime bulma, dikkat kontrolü (Stroop etkisi), duygu tanıma ve hızlı sayı sıralamayı ölçen 7 mini görevden oluşur.",
+    "boundary": "Eğlence Kapsamı: Bu oyun bir zihin egzersizidir, klinik beyin yaşı veya resmi IQ değeri belirlemez.",
+    "domainsHeading": "7 Bilişsel İşlem Alanı",
+    "d1Title": "1. Hafıza:",
+    "d1Desc": "Kısa süreli görsel hatırlama ve mekânsal örüntü koruma.",
+    "d2Title": "2. Hız:",
+    "d2Desc": "Duyusal-motor tepki süresi ve zihinsel uyanıklık.",
+    "d3Title": "3. Örüntü:",
+    "d3Desc": "Tümevarımsal mantık ve simetri ayrımı.",
+    "d4Title": "4. Kelime:",
+    "d4Desc": "Sözcük erişim hızı ve sözel akıcılık.",
+    "d5Title": "5. Odak:",
+    "d5Desc": "Bilişsel parazitlere karşı engelleyici kontrol (Stroop).",
+    "d6Title": "6. Duygu:",
+    "d6Desc": "Mikro yüz ifadelerini ve duygusal ipuçlarını anlama.",
+    "d7Title": "7. Sayılar:",
+    "d7Desc": "İşleyen bellek kapasitesi ve hızlı sayısal sıralama.",
+    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
+    "faq1Q": "Q: Gerçek beyin yaşımı mı gösteriyor?",
+    "faq1A": "A: Hayır. Oyunlardaki hız ve doğruluğu özetleyen eğlence amaçlı bir skordur.",
+    "faq2Q": "Q: Performans gün içinde değişir mi?",
+    "faq2A": "A: Evet. Uyku, biyolojik saat ve yorgunluk odaklanma hızını doğrudan etkiler.",
+    "faq3Q": "Q: Verilerim sunucuya aktarılıyor mu?",
+    "faq3A": "A: Asla. Tüm işlemler yalnızca tarayıcınızda yerel olarak gerçekleşir.",
+    "reviewDate": "Editör İncelemesi: Kasım 2026",
+    "reviewTeam": "DopaBrain Bilişsel Bilimler Ekibi"
   }
 }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <meta name="description" content="Try 7 mental-age-style mini-games for memory, reaction, patterns, focus, words, emotions, and numbers. Get a transparent average score; entertainment only." data-i18n="meta.description">
-    <meta name="dateModified" content="2026-10-24">
+    <meta name="dateModified" content="2026-11-07">
     <meta name="keywords" content="정신 나이 테스트, 뇌 나이 테스트, 인지 테스트, 기억력 테스트, 반응속도 테스트, mental age test, brain age test, cognitive test, how old is my brain test, what is my mental age, brain age quiz, cognitive age test, mental age quiz free, 精神年齢テスト, 脳年齢テスト, тест на ментальный возраст" data-i18n="meta.keywords">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mental Age-Style Brain Challenge | DopaBrain" data-i18n="meta.og_title">
@@ -101,6 +101,47 @@
     <!-- Preload critical scripts -->
     <link rel="preload" href="js/i18n.js" as="script">
     <link rel="preload" href="js/app.js" as="script">
+    <!-- Schema.org - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does this challenge measure chronological or biological mental age?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The score is a recreational performance metric summarizing speed and accuracy across seven cognitive mini-challenges. It does not measure biological cognitive age, clinical brain health, or formal intelligence quotient (IQ)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What cognitive processing domains do the seven mini-games evaluate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The session exercises seven key mental domains: short-term visual memory, psychomotor reaction speed, inductive pattern reasoning, lexical word retrieval, Stroop inhibitory focus, emotional facial decoding, and rapid numerical sequencing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can cognitive performance vary throughout the day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Autonomic arousal, sleep quality, circadian rhythm phases, hydration, caffeine levels, and sensory fatigue significantly influence sensorimotor reaction times and working memory capacity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my mini-game answers or scores saved on external servers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never. All mini-game evaluations occur entirely within your local browser runtime. No individual choices, scores, or personal responses are ever transmitted to or stored on external servers."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Skip to main content link for keyboard users -->
@@ -295,46 +336,43 @@
     <!-- Footer with Home Link -->
 
     <!-- About & Cognitive Dimensions Section -->
-    <section class="about-section collapsible-section" id="about-section">
-      <details open>
-        <summary>About This Brain Challenge &amp; Cognitive Dimensions</summary>
-        <div class="about-content">
-          <h2>How the Challenge Works</h2>
-          <p>This interactive session comprises seven timed cognitive mini-challenges testing distinct mental processing domains: visual memory, reaction speed, pattern matching, word recognition, focus under interference (Stroop effect), emotional perception, and rapid number sequencing. Scores reflect an arithmetic mean across all completed rounds.</p>
+    <section class="about-section collapsible-section" id="about-section" style="max-width:480px;margin:24px auto 16px;padding:0 12px;box-sizing:border-box;">
+      <details class="about-test faq-accordion" open style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;text-align:left;">
+        <summary data-i18n="about.summaryTitle" style="min-height:48px;padding:14px 18px;color:#38bdf8;cursor:pointer;font-size:15px;font-weight:700;list-style:none;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;touch-action:manipulation;">About This Brain Challenge & Cognitive Dimensions</summary>
+        <div class="about-content faq-content" style="padding:0 18px 20px;box-sizing:border-box;">
+          <h3 class="about-heading" data-i18n="about.howItWorksHeading" style="font-size:15px;color:#fff;margin:12px 0 8px;font-weight:700;border-left:3px solid #0891b2;padding-left:8px;">How the Challenge Works</h3>
+          <p data-i18n="about.howItWorksDesc" style="font-size:13px;line-height:1.7;color:#cbd5e1;margin:0 0 12px;">This interactive session comprises seven timed cognitive mini-challenges testing distinct mental processing domains: visual memory, reaction speed, pattern matching, word recognition, focus under interference (Stroop effect), emotional perception, and rapid number sequencing. Scores reflect an arithmetic mean across all completed rounds.</p>
+          <p class="about-note" data-i18n="about.boundary" style="font-size:12px;font-style:italic;color:#94a3b8;border-left:3px solid #0891b2;padding-left:10px;margin:12px 0 16px;line-height:1.6;">Recreational Boundary: This game is an entertainment challenge. It does not measure biological brain age, clinical neurological status, or standardized IQ.</p>
 
-          <h2>7 Cognitive Processing Domains</h2>
-          <p><strong>1. Memory:</strong> Short-term visual recall and spatial pattern retention.</p>
-          <p><strong>2. Speed:</strong> Sensorimotor reaction latency and psychomotor alertness.</p>
-          <p><strong>3. Pattern:</strong> Inductive reasoning and visual symmetry discrimination.</p>
-          <p><strong>4. Words:</strong> Lexical access speed and verbal fluency retrieval.</p>
-          <p><strong>5. Focus:</strong> Inhibitory control against cognitive interference.</p>
-          <p><strong>6. Emotion:</strong> Micro-expression decoding and emotional cue identification.</p>
-          <p><strong>7. Numbers:</strong> Working memory manipulation and rapid numerical ordering.</p>
-
-          <h2>Frequently Asked Questions</h2>
-          <div class="about-faq-item">
-            <strong class="about-faq-q">Q: Does this challenge measure chronological or biological mental age?</strong>
-            <p class="about-faq-a">A: No. The score is a recreational performance metric summarizing mini-game speed and accuracy. It does not determine clinical brain health, biological cognitive age, or formal intelligence quotient (IQ).</p>
-          </div>
-          <div class="about-faq-item">
-            <strong class="about-faq-q">Q: Can cognitive performance vary throughout the day?</strong>
-            <p class="about-faq-a">A: Yes. Autonomic arousal, sleep quality, circadian rhythms, caffeine intake, and sensory fatigue significantly influence reaction speed and working memory bandwidth.</p>
-          </div>
-          <div class="about-faq-item">
-            <strong class="about-faq-q">Q: Are my test answers or scores saved?</strong>
-            <p class="about-faq-a">A: All mini-game evaluations occur entirely within your local browser runtime. No individual choices, scores, or personal responses are ever transmitted to or stored on external servers.</p>
-          </div>
-
-          <h2>Theoretical Background &amp; Methodological Boundary</h2>
-          <ul class="about-guide-list">
-            <li>Stroop, J. R. (1935). Studies of interference in serial verbal reactions. <em>Journal of Experimental Psychology</em>, 18(6), 643-662.</li>
-            <li>Baddeley, A. (1992). Working memory. <em>Science</em>, 255(5044), 556-559.</li>
-            <li>Jensen, A. R. (2006). <em>Clocking the Mind: Mental Chronometry and Individual Differences</em>. Elsevier.</li>
+          <h3 class="about-heading" data-i18n="about.domainsHeading" style="font-size:15px;color:#fff;margin:18px 0 10px;font-weight:700;border-left:3px solid #0891b2;padding-left:8px;">7 Cognitive Processing Domains</h3>
+          <ul class="about-list" style="list-style:none;padding:0;margin:0 0 16px;">
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.d1Title">1. Memory:</strong> <span data-i18n="about.d1Desc">Short-term visual recall and spatial pattern retention.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.d2Title">2. Speed:</strong> <span data-i18n="about.d2Desc">Sensorimotor reaction latency and psychomotor alertness.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.d3Title">3. Pattern:</strong> <span data-i18n="about.d3Desc">Inductive reasoning and visual symmetry discrimination.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.d4Title">4. Words:</strong> <span data-i18n="about.d4Desc">Lexical access speed and verbal fluency retrieval.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.d5Title">5. Focus:</strong> <span data-i18n="about.d5Desc">Inhibitory control against cognitive interference (Stroop effect).</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.d6Title">6. Emotion:</strong> <span data-i18n="about.d6Desc">Micro-expression decoding and emotional cue identification.</span></li>
+            <li style="padding:6px 0;font-size:13px;line-height:1.6;color:#cbd5e1;border-bottom:1px solid rgba(255,255,255,0.05);"><strong data-i18n="about.d7Title">7. Numbers:</strong> <span data-i18n="about.d7Desc">Working memory manipulation and rapid numerical ordering.</span></li>
           </ul>
 
-          <div class="about-review-meta">
-            <span>Editorial Review: October 2026</span> &bull;
-            <span>DopaBrain Cognitive Sciences Team</span>
+          <h3 class="about-heading faq-heading" data-i18n="about.faqTitle" style="font-size:15px;color:#fff;margin:18px 0 10px;font-weight:700;border-left:3px solid #0891b2;padding-left:8px;">Frequently Asked Questions</h3>
+          <div class="faq-section" style="display:flex;flex-direction:column;gap:10px;margin-bottom:16px;">
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq1Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: Does this challenge measure chronological or biological mental age?</strong>
+              <p class="about-faq-a" data-i18n="about.faq1A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: No. The score is a recreational performance metric summarizing mini-game speed and accuracy. It does not determine clinical brain health or formal IQ.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq2Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: Can cognitive performance vary throughout the day?</strong>
+              <p class="about-faq-a" data-i18n="about.faq2A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: Yes. Arousal levels, sleep quality, circadian rhythms, caffeine, and sensory fatigue significantly influence reaction speed and working memory bandwidth.</p>
+            </div>
+            <div class="faq-item about-faq-item" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px 14px;">
+              <strong class="about-faq-q" data-i18n="about.faq3Q" style="display:block;font-size:13px;font-weight:600;color:#fff;margin-bottom:6px;">Q: Are my test answers or scores saved?</strong>
+              <p class="about-faq-a" data-i18n="about.faq3A" style="font-size:12px !important;line-height:1.6 !important;color:#94a3b8 !important;margin:0 !important;">A: All mini-game evaluations occur entirely within your local browser runtime. No individual choices or scores are ever transmitted to external servers.</p>
+            </div>
+          </div>
+
+          <div class="about-review-meta" style="font-size:11px;color:#64748b;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.08);">
+            <span data-i18n="about.reviewDate">Editorial Review: November 2026</span> • <span data-i18n="about.reviewTeam">DopaBrain Cognitive Sciences Team</span>
           </div>
         </div>
       </details>
